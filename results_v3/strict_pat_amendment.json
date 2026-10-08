@@ -1,0 +1,32 @@
+{
+  "definition": "An interval contains a PAT event only when both the ECG R peak and matched PPG maximum upstroke lie within its closed boundaries",
+  "splits": {
+    "train": {
+      "windows": 3314,
+      "changed_current": 168,
+      "changed_future": 518,
+      "max_abs_current_change_ms": 51.0,
+      "max_abs_future_change_ms": 89.0,
+      "current_pat_sha256": "5fd3c267e3c74808b6033335a1b91c6baf00867c88668f37382ff73cdecaa478",
+      "future_pat_sha256": "8775b94bd6c11c9f2b2ae652f79e62967a86fe4b4ef935dcb8640c27c3ee040c"
+    },
+    "val": {
+      "windows": 777,
+      "changed_current": 45,
+      "changed_future": 138,
+      "max_abs_current_change_ms": 10.000005722045898,
+      "max_abs_future_change_ms": 72.00001525878906,
+      "current_pat_sha256": "0222b383138f0e1d767691960cae023ba56001863d6bf95c5432fe09ed808bba",
+      "future_pat_sha256": "ad1306ac551996fc49aa106504f1d956be80ab00c348074146b3979bc1376ae4"
+    },
+    "test": {
+      "windows": 1529,
+      "changed_current": 63,
+      "changed_future": 212,
+      "max_abs_current_change_ms": 6.999999046325684,
+      "max_abs_future_change_ms": 96.99998474121094,
+      "current_pat_sha256": "c78b7b23e6ea68b77af53e3262df6fffab3b71223558a15bf7efb0023f898852",
+      "future_pat_sha256": "3de95aa64f6f63a099bce5744c07e710f7baab144bb6c8e55cda211d6784dff8"
+    }
+  }
+}

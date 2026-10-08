@@ -1,0 +1,4 @@
+name: mtgnn
+hidden_size: 128
+mixhop_depth: 2
+top_k: 4

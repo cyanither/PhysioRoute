@@ -1,0 +1,4 @@
+name: timesnet
+d_model: 128
+top_k_periods: 5
+num_layers: 3

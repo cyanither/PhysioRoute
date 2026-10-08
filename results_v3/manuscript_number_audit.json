@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checked_tokens": 68,
+  "forbidden_tokens_absent": [
+    "V3 result pending",
+    "6.50 ms",
+    "p^{cur}",
+    "supplied as a reference for all graph edges"
+  ]
+}

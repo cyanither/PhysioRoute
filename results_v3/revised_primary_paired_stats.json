@@ -1,0 +1,618 @@
+{
+  "wesad/picdgn_v3-minus-current_hr_persistence": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S13",
+      "S14",
+      "S2",
+      "S3"
+    ],
+    "per_subject_difference_bpm": {
+      "S13": 0.21549057969227547,
+      "S14": -0.29740350722397296,
+      "S2": 0.15507549497353867,
+      "S3": -0.5840083256479746
+    },
+    "mean_difference_bpm": -0.12771143955153336,
+    "bootstrap_ci95_low_bpm": -0.4407059164359738,
+    "bootstrap_ci95_high_bpm": 0.18528303733290707,
+    "exact_two_sided_signflip_p": 0.625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.625
+  },
+  "wesad/picdgn_v3-minus-deep_ppg": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S13",
+      "S14",
+      "S2",
+      "S3"
+    ],
+    "per_subject_difference_bpm": {
+      "S13": 0.25252804145952457,
+      "S14": -0.2529874295675437,
+      "S2": 0.16478058515938726,
+      "S3": -0.5328029508631488
+    },
+    "mean_difference_bpm": -0.09212043845294517,
+    "bootstrap_ci95_low_bpm": -0.39289519021534625,
+    "bootstrap_ci95_high_bpm": 0.20865431330945594,
+    "exact_two_sided_signflip_p": 0.625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.625
+  },
+  "wesad/picdgn_v3-minus-gwn": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S13",
+      "S14",
+      "S2",
+      "S3"
+    ],
+    "per_subject_difference_bpm": {
+      "S13": 0.21365507627535987,
+      "S14": -0.27646477081173637,
+      "S2": 0.15785282309215862,
+      "S3": -0.5437206938700582
+    },
+    "mean_difference_bpm": -0.11216939132856901,
+    "bootstrap_ci95_low_bpm": -0.41009273234089727,
+    "bootstrap_ci95_high_bpm": 0.18575394968375925,
+    "exact_two_sided_signflip_p": 0.625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.625
+  },
+  "wesad/picdgn_v3-minus-itransformer": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S13",
+      "S14",
+      "S2",
+      "S3"
+    ],
+    "per_subject_difference_bpm": {
+      "S13": 0.20583176621571314,
+      "S14": -0.2818252767338576,
+      "S2": 0.1629982844354309,
+      "S3": -0.5711354962403817
+    },
+    "mean_difference_bpm": -0.12103268058077382,
+    "bootstrap_ci95_low_bpm": -0.42648038648711967,
+    "bootstrap_ci95_high_bpm": 0.18441502532557202,
+    "exact_two_sided_signflip_p": 0.625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.625
+  },
+  "wesad/picdgn_v3-minus-lstm": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S13",
+      "S14",
+      "S2",
+      "S3"
+    ],
+    "per_subject_difference_bpm": {
+      "S13": 0.09980663058962627,
+      "S14": -0.3306503634183322,
+      "S2": 0.08116049675374662,
+      "S3": -0.5698047604753663
+    },
+    "mean_difference_bpm": -0.1798719991375814,
+    "bootstrap_ci95_low_bpm": -0.45022756194684926,
+    "bootstrap_ci95_high_bpm": 0.09048356367168645,
+    "exact_two_sided_signflip_p": 0.5,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.625
+  },
+  "wesad/picdgn_v3-minus-mtgnn": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S13",
+      "S14",
+      "S2",
+      "S3"
+    ],
+    "per_subject_difference_bpm": {
+      "S13": 0.2254573598858208,
+      "S14": -0.2601843673854713,
+      "S2": 0.18203031951352547,
+      "S3": -0.5286234690649886
+    },
+    "mean_difference_bpm": -0.0953300392627784,
+    "bootstrap_ci95_low_bpm": -0.39440391822522997,
+    "bootstrap_ci95_high_bpm": 0.20374383969967313,
+    "exact_two_sided_signflip_p": 0.625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.625
+  },
+  "wesad/picdgn_v3-minus-patchtst": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S13",
+      "S14",
+      "S2",
+      "S3"
+    ],
+    "per_subject_difference_bpm": {
+      "S13": 0.21642143334069672,
+      "S14": -0.26372883245960194,
+      "S2": 0.1388085924082761,
+      "S3": -0.5447153783697363
+    },
+    "mean_difference_bpm": -0.11330354627009134,
+    "bootstrap_ci95_low_bpm": -0.4042221054146691,
+    "bootstrap_ci95_high_bpm": 0.1776150128744864,
+    "exact_two_sided_signflip_p": 0.625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.625
+  },
+  "ppg_dalia/picdgn_v3-minus-current_hr_persistence": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S1",
+      "S11",
+      "S12",
+      "S2"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.79344817404541,
+      "S11": -0.5981023277716295,
+      "S12": -0.47663901880288595,
+      "S2": -0.6293520107316153
+    },
+    "mean_difference_bpm": -0.6243853828378851,
+    "bootstrap_ci95_low_bpm": -0.7446117124769649,
+    "bootstrap_ci95_high_bpm": -0.5148172667850683,
+    "exact_two_sided_signflip_p": 0.125,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ppg_dalia/picdgn_v3-minus-deep_ppg": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S1",
+      "S11",
+      "S12",
+      "S2"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.7811050600012251,
+      "S11": -0.5897996180310934,
+      "S12": -0.49475494050675894,
+      "S2": -0.6474055976041703
+    },
+    "mean_difference_bpm": -0.628266304035812,
+    "bootstrap_ci95_low_bpm": -0.7332786995086922,
+    "bootstrap_ci95_high_bpm": -0.5329176047811118,
+    "exact_two_sided_signflip_p": 0.125,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ppg_dalia/picdgn_v3-minus-gwn": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S1",
+      "S11",
+      "S12",
+      "S2"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.7936242933414098,
+      "S11": -0.5982636064639271,
+      "S12": -0.47655703439834,
+      "S2": -0.6295311515395705
+    },
+    "mean_difference_bpm": -0.6244940214358119,
+    "bootstrap_ci95_low_bpm": -0.7447841216220391,
+    "bootstrap_ci95_high_bpm": -0.5148005636836476,
+    "exact_two_sided_signflip_p": 0.125,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ppg_dalia/picdgn_v3-minus-itransformer": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S1",
+      "S11",
+      "S12",
+      "S2"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.7936001879586229,
+      "S11": -0.5982451490183041,
+      "S12": -0.47660270482871187,
+      "S2": -0.6295054740343395
+    },
+    "mean_difference_bpm": -0.6244883789599945,
+    "bootstrap_ci95_low_bpm": -0.7447614282235432,
+    "bootstrap_ci95_high_bpm": -0.5148283971301187,
+    "exact_two_sided_signflip_p": 0.125,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ppg_dalia/picdgn_v3-minus-lstm": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S1",
+      "S11",
+      "S12",
+      "S2"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.8124541346592743,
+      "S11": -0.5998724488331065,
+      "S12": -0.5643081972325683,
+      "S2": -0.658938132376577
+    },
+    "mean_difference_bpm": -0.6588932282753815,
+    "bootstrap_ci95_low_bpm": -0.7593087132027323,
+    "bootstrap_ci95_high_bpm": -0.5820903230328374,
+    "exact_two_sided_signflip_p": 0.125,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ppg_dalia/picdgn_v3-minus-mtgnn": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S1",
+      "S11",
+      "S12",
+      "S2"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.803235777842666,
+      "S11": -0.5943887257151426,
+      "S12": -0.4689724272451583,
+      "S2": -0.6419993768819132
+    },
+    "mean_difference_bpm": -0.62714907692122,
+    "bootstrap_ci95_low_bpm": -0.7510240148107852,
+    "bootstrap_ci95_high_bpm": -0.5122291646543471,
+    "exact_two_sided_signflip_p": 0.125,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ppg_dalia/picdgn_v3-minus-patchtst": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 4,
+    "subjects": [
+      "S1",
+      "S11",
+      "S12",
+      "S2"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.786276365799484,
+      "S11": -0.5741188562838447,
+      "S12": -0.5515356700891142,
+      "S2": -0.6670818965470175
+    },
+    "mean_difference_bpm": -0.6447531971798651,
+    "bootstrap_ci95_low_bpm": -0.7332369884205742,
+    "bootstrap_ci95_high_bpm": -0.5628272631864795,
+    "exact_two_sided_signflip_p": 0.125,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ptt_ppg/picdgn_v3-minus-current_hr_persistence": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 6,
+    "subjects": [
+      "S1",
+      "S18",
+      "S21",
+      "S4",
+      "S8",
+      "S9"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.0024441913288073104,
+      "S18": 0.006013062927457824,
+      "S21": -0.003716341874345197,
+      "S4": -0.007075966923393295,
+      "S8": -0.016129983743659794,
+      "S9": -0.004706404614354476
+    },
+    "mean_difference_bpm": -0.004676637592850375,
+    "bootstrap_ci95_low_bpm": -0.010093972530148794,
+    "bootstrap_ci95_high_bpm": 0.0006354376526363984,
+    "exact_two_sided_signflip_p": 0.15625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ptt_ppg/picdgn_v3-minus-deep_ppg": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 6,
+    "subjects": [
+      "S1",
+      "S18",
+      "S21",
+      "S4",
+      "S8",
+      "S9"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.00684149292905376,
+      "S18": 0.007150209848842959,
+      "S21": -0.005083577199415679,
+      "S4": -0.001639436294673402,
+      "S8": -0.028176768023977415,
+      "S9": -0.0009793844147631958
+    },
+    "mean_difference_bpm": -0.005928408168840083,
+    "bootstrap_ci95_low_bpm": -0.015665102951737103,
+    "bootstrap_ci95_high_bpm": 0.001510463046468787,
+    "exact_two_sided_signflip_p": 0.28125,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.421875
+  },
+  "ptt_ppg/picdgn_v3-minus-gwn": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 6,
+    "subjects": [
+      "S1",
+      "S18",
+      "S21",
+      "S4",
+      "S8",
+      "S9"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.002467662763411571,
+      "S18": 0.005444903127730871,
+      "S21": -0.004294245893305071,
+      "S4": -0.007545124609958176,
+      "S8": -0.01582564025999549,
+      "S9": -0.0051470217497453065
+    },
+    "mean_difference_bpm": -0.004972465358114123,
+    "bootstrap_ci95_low_bpm": -0.010202072386056986,
+    "bootstrap_ci95_high_bpm": 0.0001958167100129265,
+    "exact_two_sided_signflip_p": 0.15625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ptt_ppg/picdgn_v3-minus-itransformer": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 6,
+    "subjects": [
+      "S1",
+      "S18",
+      "S21",
+      "S4",
+      "S8",
+      "S9"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.0026065236353046473,
+      "S18": 0.005422644671939647,
+      "S21": -0.004568626663901653,
+      "S4": -0.00747551153985686,
+      "S8": -0.016373605690454873,
+      "S9": -0.0054033452814275405
+    },
+    "mean_difference_bpm": -0.0051674946898343215,
+    "bootstrap_ci95_low_bpm": -0.010610235946765911,
+    "bootstrap_ci95_high_bpm": 0.0001247243889003436,
+    "exact_two_sided_signflip_p": 0.15625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ptt_ppg/picdgn_v3-minus-lstm": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 6,
+    "subjects": [
+      "S1",
+      "S18",
+      "S21",
+      "S4",
+      "S8",
+      "S9"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.002815675321232991,
+      "S18": 0.00612338809739974,
+      "S21": -0.0049716017462991145,
+      "S4": -0.006373183331434262,
+      "S8": -0.018664466910682798,
+      "S9": -0.005521141728864443
+    },
+    "mean_difference_bpm": -0.005370446823518979,
+    "bootstrap_ci95_low_bpm": -0.011692310188502461,
+    "bootstrap_ci95_high_bpm": 0.00046802038468295057,
+    "exact_two_sided_signflip_p": 0.15625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ptt_ppg/picdgn_v3-minus-mtgnn": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 6,
+    "subjects": [
+      "S1",
+      "S18",
+      "S21",
+      "S4",
+      "S8",
+      "S9"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.0022783948647929543,
+      "S18": 0.0051899481387366105,
+      "S21": -0.0038009708577937396,
+      "S4": -0.008034478099189623,
+      "S8": -0.014331159478591005,
+      "S9": -0.004798632836624428
+    },
+    "mean_difference_bpm": -0.004675614666375856,
+    "bootstrap_ci95_low_bpm": -0.009398619161135935,
+    "bootstrap_ci95_high_bpm": 0.0001956576510560911,
+    "exact_two_sided_signflip_p": 0.15625,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  },
+  "ptt_ppg/picdgn_v3-minus-patchtst": {
+    "estimand": "model A minus model B subject-level MAE, averaged over matched seeds",
+    "matched_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_subjects": 6,
+    "subjects": [
+      "S1",
+      "S18",
+      "S21",
+      "S4",
+      "S8",
+      "S9"
+    ],
+    "per_subject_difference_bpm": {
+      "S1": -0.006553722486532898,
+      "S18": 0.003547324831523646,
+      "S21": -0.0030809430265616557,
+      "S4": -0.005665545205812172,
+      "S8": -0.012642501229825243,
+      "S9": -0.0015773399074086925
+    },
+    "mean_difference_bpm": -0.00432878783743617,
+    "bootstrap_ci95_low_bpm": -0.008292489158068536,
+    "bootstrap_ci95_high_bpm": -0.0003777426374103497,
+    "exact_two_sided_signflip_p": 0.125,
+    "bh_adjusted_p_across_reported_model_comparisons": 0.25240384615384615
+  }
+}

@@ -1,0 +1,8 @@
+# @package _global_
+defaults:
+  - data: wesad
+  - _self_
+
+hydra:
+  job:
+    chdir: false

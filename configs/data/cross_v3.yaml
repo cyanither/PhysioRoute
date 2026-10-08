@@ -1,0 +1,9 @@
+name: cross
+train_datasets: [wesad, ppg_dalia]
+test_dataset: ptt_ppg
+processed_roots:
+  wesad: data/processed_v3/wesad_h8
+  ppg_dalia: data/processed_v3/ppg_dalia_h8
+  ptt_ppg: data/processed_v3/ptt_ppg_h8_transfer
+common_nodes: [ecg, ppg, acc_x, acc_y, acc_z]
+target_names: [hr]

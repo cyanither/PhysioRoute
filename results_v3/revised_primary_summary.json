@@ -1,0 +1,1818 @@
+{
+  "selection_rule": "Promote pair-conditioned learned-static PI-DDGN because its mean validation objective was lower than the chunk-dynamic variant on all three datasets; test artifacts were not altered.",
+  "groups": {
+    "ppg_dalia/deep_ppg": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 4.942916004233945,
+      "window_hr_mae_sd": 0.006602851143644726,
+      "subject_macro_hr_mae_mean": 4.902681517498012,
+      "subject_macro_hr_mae_sd": 0.006983707384455134,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/deep_ppg/seed42",
+          "seed": 42,
+          "window_hr_mae": 4.946041217565117,
+          "subject_macro_hr_mae": 4.907072225791929,
+          "per_subject_hr_mae": {
+            "S1": 5.402584587439218,
+            "S11": 5.522100974270285,
+            "S12": 3.83144193826967,
+            "S2": 4.872161403188541
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/deep_ppg/seed43",
+          "seed": 43,
+          "window_hr_mae": 4.9468185988288695,
+          "subject_macro_hr_mae": 4.906731461569173,
+          "per_subject_hr_mae": {
+            "S1": 5.394970930359154,
+            "S11": 5.557514294559052,
+            "S12": 3.7785212433262236,
+            "S2": 4.8959193780322625
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/deep_ppg/seed44",
+          "seed": 44,
+          "window_hr_mae": 4.931942324984954,
+          "subject_macro_hr_mae": 4.891217315409631,
+          "per_subject_hr_mae": {
+            "S1": 5.387695969454638,
+            "S11": 5.55482071744248,
+            "S12": 3.7538676441095435,
+            "S2": 4.868484930631863
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/deep_ppg/seed45",
+          "seed": 45,
+          "window_hr_mae": 4.948143688998986,
+          "subject_macro_hr_mae": 4.907614509470363,
+          "per_subject_hr_mae": {
+            "S1": 5.398849186185542,
+            "S11": 5.571149119517507,
+            "S12": 3.774931716615227,
+            "S2": 4.885528015563177
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/deep_ppg/seed46",
+          "seed": 46,
+          "window_hr_mae": 4.941634190791796,
+          "subject_macro_hr_mae": 4.900772075248963,
+          "per_subject_hr_mae": {
+            "S1": 5.4018420019131534,
+            "S11": 5.56058358665168,
+            "S12": 3.7521535273570166,
+            "S2": 4.888509185074002
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ppg_dalia/gwn": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 4.940049233162669,
+      "window_hr_mae_sd": 0.00024634759975293043,
+      "subject_macro_hr_mae_mean": 4.898909234898012,
+      "subject_macro_hr_mae_sd": 0.00022932283861646347,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/gwn/seed42",
+          "seed": 42,
+          "window_hr_mae": 4.940056212761757,
+          "subject_macro_hr_mae": 4.898912338286144,
+          "per_subject_hr_mae": {
+            "S1": 5.4097560425805815,
+            "S11": 5.56175182472021,
+            "S12": 3.7598374822337157,
+            "S2": 4.864304003610072
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/gwn/seed43",
+          "seed": 43,
+          "window_hr_mae": 4.939821006265084,
+          "subject_macro_hr_mae": 4.898697308163397,
+          "per_subject_hr_mae": {
+            "S1": 5.409271327832672,
+            "S11": 5.5613104916308815,
+            "S12": 3.76040231012235,
+            "S2": 4.863805103067684
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/gwn/seed44",
+          "seed": 44,
+          "window_hr_mae": 4.940384862571081,
+          "subject_macro_hr_mae": 4.899224188734349,
+          "per_subject_hr_mae": {
+            "S1": 5.410313747566603,
+            "S11": 5.56222643504623,
+            "S12": 3.7594990627021545,
+            "S2": 4.86485750962241
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/gwn/seed45",
+          "seed": 45,
+          "window_hr_mae": 4.940181017760515,
+          "subject_macro_hr_mae": 4.8990302465411535,
+          "per_subject_hr_mae": {
+            "S1": 5.4099744918764845,
+            "S11": 5.561938683324611,
+            "S12": 3.759693286677075,
+            "S2": 4.864514524286443
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/gwn/seed46",
+          "seed": 46,
+          "window_hr_mae": 4.939803066454906,
+          "subject_macro_hr_mae": 4.898682092765014,
+          "per_subject_hr_mae": {
+            "S1": 5.409223232196289,
+            "S11": 5.5612611998832415,
+            "S12": 3.760494397400291,
+            "S2": 4.863749541580238
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ppg_dalia/itransformer": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 4.940042293365229,
+      "window_hr_mae_sd": 0.0002446526102151617,
+      "subject_macro_hr_mae_mean": 4.898903592422195,
+      "subject_macro_hr_mae_sd": 0.00022592279007985986,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/itransformer/seed42",
+          "seed": 42,
+          "window_hr_mae": 4.940136133576334,
+          "subject_macro_hr_mae": 4.89898772882148,
+          "per_subject_hr_mae": {
+            "S1": 5.40989603717318,
+            "S11": 5.561873971454024,
+            "S12": 3.7597399863467853,
+            "S2": 4.86444092031193
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/itransformer/seed43",
+          "seed": 43,
+          "window_hr_mae": 4.939815816398522,
+          "subject_macro_hr_mae": 4.898692836669145,
+          "per_subject_hr_mae": {
+            "S1": 5.409258292371813,
+            "S11": 5.561297028742701,
+            "S12": 3.760426481210502,
+            "S2": 4.8637895443515635
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/itransformer/seed44",
+          "seed": 44,
+          "window_hr_mae": 4.940355469724917,
+          "subject_macro_hr_mae": 4.899196065478105,
+          "per_subject_hr_mae": {
+            "S1": 5.410265176396607,
+            "S11": 5.562189107479887,
+            "S12": 3.7595226312139234,
+            "S2": 4.864807346822003
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/itransformer/seed45",
+          "seed": 45,
+          "window_hr_mae": 4.940132224965067,
+          "subject_macro_hr_mae": 4.898984026052099,
+          "per_subject_hr_mae": {
+            "S1": 5.409889221191406,
+            "S11": 5.5618683247680325,
+            "S12": 3.759744048877886,
+            "S2": 4.864434509371071
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/itransformer/seed46",
+          "seed": 46,
+          "window_hr_mae": 4.9397718221613,
+          "subject_macro_hr_mae": 4.898657305090143,
+          "per_subject_hr_mae": {
+            "S1": 5.409109588005688,
+            "S11": 5.561167914932413,
+            "S12": 3.7607217436383484,
+            "S2": 4.863629973784126
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ppg_dalia/lstm": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 4.972724315220139,
+      "window_hr_mae_sd": 0.06310508211536094,
+      "subject_macro_hr_mae_mean": 4.933308441737582,
+      "subject_macro_hr_mae_sd": 0.06598356008333012,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/lstm/seed42",
+          "seed": 42,
+          "window_hr_mae": 4.943516310850313,
+          "subject_macro_hr_mae": 4.902847042167791,
+          "per_subject_hr_mae": {
+            "S1": 5.408521421885086,
+            "S11": 5.555870058042975,
+            "S12": 3.773094464866978,
+            "S2": 4.873902223876126
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/lstm/seed43",
+          "seed": 43,
+          "window_hr_mae": 4.956721956283728,
+          "subject_macro_hr_mae": 4.916864064095422,
+          "per_subject_hr_mae": {
+            "S1": 5.409875938708565,
+            "S11": 5.557638142695344,
+            "S12": 3.8030011293994392,
+            "S2": 4.89694104557834
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/lstm/seed44",
+          "seed": 44,
+          "window_hr_mae": 5.084875681231198,
+          "subject_macro_hr_mae": 5.050538975772692,
+          "per_subject_hr_mae": {
+            "S1": 5.508433882560542,
+            "S11": 5.581263477694809,
+            "S12": 4.14391206267533,
+            "S2": 4.968546480160088
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/lstm/seed45",
+          "seed": 45,
+          "window_hr_mae": 4.940073790891229,
+          "subject_macro_hr_mae": 4.898927908584875,
+          "per_subject_hr_mae": {
+            "S1": 5.409782972799878,
+            "S11": 5.561837766856436,
+            "S12": 3.7598612378357323,
+            "S2": 4.864229656847455
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/lstm/seed46",
+          "seed": 46,
+          "window_hr_mae": 4.938433836844225,
+          "subject_macro_hr_mae": 4.897364218067126,
+          "per_subject_hr_mae": {
+            "S1": 5.4060738326878806,
+            "S11": 5.559923401161506,
+            "S12": 3.7588134585292474,
+            "S2": 4.8646461798898715
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ppg_dalia/mtgnn": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 4.942834503103183,
+      "window_hr_mae_sd": 0.0031319089397313627,
+      "subject_macro_hr_mae_mean": 4.90156429038342,
+      "subject_macro_hr_mae_sd": 0.00311689896650878,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/mtgnn/seed42",
+          "seed": 42,
+          "window_hr_mae": 4.939989268290619,
+          "subject_macro_hr_mae": 4.898849981647722,
+          "per_subject_hr_mae": {
+            "S1": 5.409636779584932,
+            "S11": 5.56163363066659,
+            "S12": 3.759954999206932,
+            "S2": 4.864174517132433
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/mtgnn/seed43",
+          "seed": 43,
+          "window_hr_mae": 4.9467813581018625,
+          "subject_macro_hr_mae": 4.905603756482111,
+          "per_subject_hr_mae": {
+            "S1": 5.422618609070452,
+            "S11": 5.557625532946324,
+            "S12": 3.7524263795773694,
+            "S2": 4.8897445043343
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/mtgnn/seed44",
+          "seed": 44,
+          "window_hr_mae": 4.939917268211858,
+          "subject_macro_hr_mae": 4.898650706591222,
+          "per_subject_hr_mae": {
+            "S1": 5.4143802160901275,
+            "S11": 5.557349898314967,
+            "S12": 3.7500089533389755,
+            "S2": 4.872863758620817
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/mtgnn/seed45",
+          "seed": 45,
+          "window_hr_mae": 4.945386071557317,
+          "subject_macro_hr_mae": 4.904005464225948,
+          "per_subject_hr_mae": {
+            "S1": 5.426808342117635,
+            "S11": 5.55720244491505,
+            "S12": 3.750426218767834,
+            "S2": 4.881584851103274
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/mtgnn/seed46",
+          "seed": 46,
+          "window_hr_mae": 4.942098549354258,
+          "subject_macro_hr_mae": 4.900711542970097,
+          "per_subject_hr_mae": {
+            "S1": 5.423152317695764,
+            "S11": 5.55530272401832,
+            "S12": 3.7491869524785666,
+            "S2": 4.875204177687737
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ppg_dalia/patchtst": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 4.957930475155466,
+      "window_hr_mae_sd": 0.018479899307628004,
+      "subject_macro_hr_mae_mean": 4.919168410642065,
+      "subject_macro_hr_mae_sd": 0.01959991771312483,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/patchtst/seed42",
+          "seed": 42,
+          "window_hr_mae": 4.938445399245651,
+          "subject_macro_hr_mae": 4.899067857490138,
+          "per_subject_hr_mae": {
+            "S1": 5.386551274048819,
+            "S11": 5.527325782698927,
+            "S12": 3.7860921876445697,
+            "S2": 4.896302185568236
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/patchtst/seed43",
+          "seed": 43,
+          "window_hr_mae": 4.9480347742369135,
+          "subject_macro_hr_mae": 4.908820398977583,
+          "per_subject_hr_mae": {
+            "S1": 5.3908447760451095,
+            "S11": 5.541234280708835,
+            "S12": 3.808233313347883,
+            "S2": 4.894969225808502
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/patchtst/seed44",
+          "seed": 44,
+          "window_hr_mae": 4.982172588443281,
+          "subject_macro_hr_mae": 4.945453565116843,
+          "per_subject_hr_mae": {
+            "S1": 5.4084925673710575,
+            "S11": 5.52763273985305,
+            "S12": 3.9262898548393492,
+            "S2": 4.919399098403916
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/patchtst/seed45",
+          "seed": 45,
+          "window_hr_mae": 4.972490441722299,
+          "subject_macro_hr_mae": 4.934016030907852,
+          "per_subject_hr_mae": {
+            "S1": 5.425325228908533,
+            "S11": 5.53932043878516,
+            "S12": 3.8736748986942753,
+            "S2": 4.897743557243441
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ppg_dalia/patchtst/seed46",
+          "seed": 46,
+          "window_hr_mae": 4.948509172129183,
+          "subject_macro_hr_mae": 4.9084842007179095,
+          "per_subject_hr_mae": {
+            "S1": 5.400585357969481,
+            "S11": 5.552251641658789,
+            "S12": 3.7805294630633797,
+            "S2": 4.900570340179987
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ppg_dalia/picdgn_v3": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 4.309965734913998,
+      "window_hr_mae_sd": 0.36367042648232356,
+      "subject_macro_hr_mae_mean": 4.2744152134622,
+      "subject_macro_hr_mae_sd": 0.36045361522467123,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/ablation/ppg_dalia/learned_static/seed42",
+          "seed": 42,
+          "window_hr_mae": 4.939367802994892,
+          "subject_macro_hr_mae": 4.898205976673579,
+          "per_subject_hr_mae": {
+            "S1": 5.408946257722124,
+            "S11": 5.561618059823828,
+            "S12": 3.75832900644108,
+            "S2": 4.863930582707286
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/ablation/ppg_dalia/learned_static/seed43",
+          "seed": 43,
+          "window_hr_mae": 4.239484584939438,
+          "subject_macro_hr_mae": 4.199173090640565,
+          "per_subject_hr_mae": {
+            "S1": 4.497732792349055,
+            "S11": 5.082467849346155,
+            "S12": 3.064719248729147,
+            "S2": 4.1517724721379015
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/ablation/ppg_dalia/learned_static/seed44",
+          "seed": 44,
+          "window_hr_mae": 4.209220795111528,
+          "subject_macro_hr_mae": 4.178752560853051,
+          "per_subject_hr_mae": {
+            "S1": 4.463024430355783,
+            "S11": 4.786791388034556,
+            "S12": 3.350855612299245,
+            "S2": 4.114338812722621
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/ablation/ppg_dalia/learned_static/seed45",
+          "seed": 45,
+          "window_hr_mae": 4.160871508462487,
+          "subject_macro_hr_mae": 4.12929484720831,
+          "per_subject_hr_mae": {
+            "S1": 4.386393434171015,
+            "S11": 4.786318267393457,
+            "S12": 3.219547219489031,
+            "S2": 4.124920467779736
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/ablation/ppg_dalia/learned_static/seed46",
+          "seed": 46,
+          "window_hr_mae": 4.000883983061644,
+          "subject_macro_hr_mae": 3.9666495919354956,
+          "per_subject_hr_mae": {
+            "S1": 4.324320460747604,
+            "S11": 4.599975037687543,
+            "S12": 3.0236902801853835,
+            "S2": 3.9186125891214507
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ptt_ppg/deep_ppg": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 3.4602989170424996,
+      "window_hr_mae_sd": 0.002370694926686003,
+      "subject_macro_hr_mae_mean": 3.4648092360670923,
+      "subject_macro_hr_mae_sd": 0.0023974737933182767,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/deep_ppg/seed42",
+          "seed": 42,
+          "window_hr_mae": 3.460434811110587,
+          "subject_macro_hr_mae": 3.4649560327186104,
+          "per_subject_hr_mae": {
+            "S1": 2.3817959176987755,
+            "S18": 2.7686530396578806,
+            "S21": 3.2962761516627586,
+            "S4": 3.2799076757836065,
+            "S8": 4.770221059030224,
+            "S9": 4.292882352478419
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/deep_ppg/seed43",
+          "seed": 43,
+          "window_hr_mae": 3.460378766605634,
+          "subject_macro_hr_mae": 3.4648971617617046,
+          "per_subject_hr_mae": {
+            "S1": 2.379646941961929,
+            "S18": 2.7641617305695063,
+            "S21": 3.2988534859517817,
+            "S4": 3.2819204440908543,
+            "S8": 4.768019996612911,
+            "S9": 4.296780371383245
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/deep_ppg/seed44",
+          "seed": 44,
+          "window_hr_mae": 3.45637393820278,
+          "subject_macro_hr_mae": 3.4608334472097204,
+          "per_subject_hr_mae": {
+            "S1": 2.3811087313766186,
+            "S18": 2.7621520142706615,
+            "S21": 3.2991098111326043,
+            "S4": 3.287679712284486,
+            "S8": 4.749054533219621,
+            "S9": 4.285895880974328
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/deep_ppg/seed45",
+          "seed": 45,
+          "window_hr_mae": 3.4624461630655317,
+          "subject_macro_hr_mae": 3.4669604433460512,
+          "per_subject_hr_mae": {
+            "S1": 2.3942284013313677,
+            "S18": 2.7664525471036394,
+            "S21": 3.2945708147150725,
+            "S4": 3.2725520778346704,
+            "S8": 4.788424676586046,
+            "S9": 4.28553414250551
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/deep_ppg/seed46",
+          "seed": 46,
+          "window_hr_mae": 3.4618609062279653,
+          "subject_macro_hr_mae": 3.4663990952993746,
+          "per_subject_hr_mae": {
+            "S1": 2.381467929678074,
+            "S18": 2.761512514144655,
+            "S21": 3.3030874078924004,
+            "S4": 3.277367315697394,
+            "S8": 4.776175427342592,
+            "S9": 4.298783977041132
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ptt_ppg/gwn": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 3.4593547474254267,
+      "window_hr_mae_sd": 0.002309660729879073,
+      "subject_macro_hr_mae_mean": 3.463853293256366,
+      "subject_macro_hr_mae_sd": 0.0023400500691685318,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/gwn/seed42",
+          "seed": 42,
+          "window_hr_mae": 3.4584456020277883,
+          "subject_macro_hr_mae": 3.462932967466072,
+          "per_subject_hr_mae": {
+            "S1": 2.378678575906054,
+            "S18": 2.767372555202908,
+            "S21": 3.295909564956846,
+            "S4": 3.287730331126327,
+            "S8": 4.7528199508727305,
+            "S9": 4.295086826731565
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/gwn/seed43",
+          "seed": 43,
+          "window_hr_mae": 3.4582420783233143,
+          "subject_macro_hr_mae": 3.4627255797643897,
+          "per_subject_hr_mae": {
+            "S1": 2.378535591037117,
+            "S18": 2.767955780029297,
+            "S21": 3.2955354532234282,
+            "S4": 3.2885749846351655,
+            "S8": 4.750874726668648,
+            "S9": 4.294876942992682
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/gwn/seed44",
+          "seed": 44,
+          "window_hr_mae": 3.4581443881427174,
+          "subject_macro_hr_mae": 3.4626258587698135,
+          "per_subject_hr_mae": {
+            "S1": 2.3784742613096497,
+            "S18": 2.7682597447955417,
+            "S21": 3.2953490909380405,
+            "S4": 3.289021672429265,
+            "S8": 4.749850156278949,
+            "S9": 4.294800226867435
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/gwn/seed45",
+          "seed": 45,
+          "window_hr_mae": 3.458462337795779,
+          "subject_macro_hr_mae": 3.462950002750066,
+          "per_subject_hr_mae": {
+            "S1": 2.378694541666038,
+            "S18": 2.7673281715029763,
+            "S21": 3.2959390572408442,
+            "S4": 3.287661872775398,
+            "S8": 4.752972780009032,
+            "S9": 4.295103593306108
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/gwn/seed46",
+          "seed": 46,
+          "window_hr_mae": 3.4634793308375316,
+          "subject_macro_hr_mae": 3.4680320575314894,
+          "per_subject_hr_mae": {
+            "S1": 2.3819958012996953,
+            "S18": 2.7605421278211804,
+            "S21": 3.3052178484649053,
+            "S4": 3.275966806301279,
+            "S8": 4.783622440142123,
+            "S9": 4.300847321159755
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ptt_ppg/itransformer": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 3.4595486308485164,
+      "window_hr_mae_sd": 0.002854254227948161,
+      "subject_macro_hr_mae_mean": 3.4640483225880865,
+      "subject_macro_hr_mae_sd": 0.0028901511230288606,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/itransformer/seed42",
+          "seed": 42,
+          "window_hr_mae": 3.458195114385232,
+          "subject_macro_hr_mae": 3.4626776716972913,
+          "per_subject_hr_mae": {
+            "S1": 2.3785029525462265,
+            "S18": 2.768095410059369,
+            "S21": 3.295447157305691,
+            "S4": 3.2887836588855874,
+            "S8": 4.7504010407821,
+            "S9": 4.294835810604774
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/itransformer/seed43",
+          "seed": 43,
+          "window_hr_mae": 3.458302993724516,
+          "subject_macro_hr_mae": 3.462787698812058,
+          "per_subject_hr_mae": {
+            "S1": 2.378569407812877,
+            "S18": 2.767776670910063,
+            "S21": 3.2956512511483296,
+            "S4": 3.2883184720190335,
+            "S8": 4.751466864182544,
+            "S9": 4.2949435267995
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/itransformer/seed44",
+          "seed": 44,
+          "window_hr_mae": 3.457974226198764,
+          "subject_macro_hr_mae": 3.4624513480243624,
+          "per_subject_hr_mae": {
+            "S1": 2.378429957798549,
+            "S18": 2.7689178708999878,
+            "S21": 3.2950282341877934,
+            "S4": 3.289963946839557,
+            "S8": 4.747704879097316,
+            "S9": 4.294663199322968
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/itransformer/seed45",
+          "seed": 45,
+          "window_hr_mae": 3.4586341264124707,
+          "subject_macro_hr_mae": 3.4631247947914097,
+          "per_subject_hr_mae": {
+            "S1": 2.3788590302338473,
+            "S18": 2.766855209592789,
+            "S21": 3.29624145869681,
+            "S4": 3.286973636583012,
+            "S8": 4.754548114279042,
+            "S9": 4.295271319362957
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/itransformer/seed46",
+          "seed": 46,
+          "window_hr_mae": 3.4646366935216033,
+          "subject_macro_hr_mae": 3.469200099615311,
+          "per_subject_hr_mae": {
+            "S1": 2.3827117271865195,
+            "S18": 2.7599245101686507,
+            "S21": 3.3069548173384233,
+            "S4": 3.2745678875897384,
+            "S8": 4.788758982782778,
+            "S9": 4.302282672625757
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ptt_ppg/lstm": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 3.4597470762528495,
+      "window_hr_mae_sd": 0.002689468678454669,
+      "subject_macro_hr_mae_mean": 3.4642512747217715,
+      "subject_macro_hr_mae_sd": 0.0027227894388967225,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/lstm/seed42",
+          "seed": 42,
+          "window_hr_mae": 3.4583755652837462,
+          "subject_macro_hr_mae": 3.4628620398291137,
+          "per_subject_hr_mae": {
+            "S1": 2.3786829355600716,
+            "S18": 2.767507098969959,
+            "S21": 3.2957909323952417,
+            "S4": 3.2878453906438527,
+            "S8": 4.75236182533234,
+            "S9": 4.294984056073215
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/lstm/seed43",
+          "seed": 43,
+          "window_hr_mae": 3.4590306718650403,
+          "subject_macro_hr_mae": 3.463528960272361,
+          "per_subject_hr_mae": {
+            "S1": 2.3793613047673436,
+            "S18": 2.7656527237286643,
+            "S21": 3.2969826775577227,
+            "S4": 3.2850700805546236,
+            "S8": 4.758526216853749,
+            "S9": 4.295580758172061
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/lstm/seed44",
+          "seed": 44,
+          "window_hr_mae": 3.4583251883267887,
+          "subject_macro_hr_mae": 3.4628104037758902,
+          "per_subject_hr_mae": {
+            "S1": 2.378589320827175,
+            "S18": 2.7677027989947605,
+            "S21": 3.2956950372386826,
+            "S4": 3.288197815648377,
+            "S8": 4.7517153472297275,
+            "S9": 4.294962102716619
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/lstm/seed45",
+          "seed": 45,
+          "window_hr_mae": 3.458472327362719,
+          "subject_macro_hr_mae": 3.462960184462323,
+          "per_subject_hr_mae": {
+            "S1": 2.3787160453649103,
+            "S18": 2.767290448385572,
+            "S21": 3.2959529288672647,
+            "S4": 3.2876037833313223,
+            "S8": 4.753090507899349,
+            "S9": 4.295107392925519
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/lstm/seed46",
+          "seed": 46,
+          "window_hr_mae": 3.4645316284259526,
+          "subject_macro_hr_mae": 3.4690947852691676,
+          "per_subject_hr_mae": {
+            "S1": 2.3827692274881604,
+            "S18": 2.7599128844246033,
+            "S21": 3.306916218030123,
+            "S4": 3.2743788906966396,
+            "S8": 4.788640289909755,
+            "S9": 4.301951201065727
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ptt_ppg/mtgnn": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 3.459061043179838,
+      "window_hr_mae_sd": 0.0016939377723256337,
+      "subject_macro_hr_mae_mean": 3.463556442564628,
+      "subject_macro_hr_mae_sd": 0.0017180893326330952,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/mtgnn/seed42",
+          "seed": 42,
+          "window_hr_mae": 3.458367561654689,
+          "subject_macro_hr_mae": 3.462853559030618,
+          "per_subject_hr_mae": {
+            "S1": 2.378607466414168,
+            "S18": 2.767584482828776,
+            "S21": 3.2957733214608296,
+            "S4": 3.2880398076473516,
+            "S8": 4.752105803357754,
+            "S9": 4.295010472474833
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/mtgnn/seed43",
+          "seed": 43,
+          "window_hr_mae": 3.4582029383817163,
+          "subject_macro_hr_mae": 3.4626857239789697,
+          "per_subject_hr_mae": {
+            "S1": 2.3785054269444528,
+            "S18": 2.7680631970602367,
+            "S21": 3.295467542565387,
+            "S4": 3.288732403493756,
+            "S8": 4.750501881475034,
+            "S9": 4.294843892334949
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/mtgnn/seed44",
+          "seed": 44,
+          "window_hr_mae": 3.4581268639873257,
+          "subject_macro_hr_mae": 3.4626079416555506,
+          "per_subject_hr_mae": {
+            "S1": 2.3784666024579963,
+            "S18": 2.768318357921782,
+            "S21": 3.2953197795883,
+            "S4": 3.289106391111396,
+            "S8": 4.74964847489308,
+            "S9": 4.294788043960752
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/mtgnn/seed45",
+          "seed": 45,
+          "window_hr_mae": 3.4585293507248536,
+          "subject_macro_hr_mae": 3.4630181925640344,
+          "per_subject_hr_mae": {
+            "S1": 2.3787575799065666,
+            "S18": 2.7671424623519654,
+            "S21": 3.2960573279339336,
+            "S4": 3.2873929881681345,
+            "S8": 4.7535888008449385,
+            "S9": 4.295169996178669
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/mtgnn/seed46",
+          "seed": 46,
+          "window_hr_mae": 3.4620785011506063,
+          "subject_macro_hr_mae": 3.466616795593966,
+          "per_subject_hr_mae": {
+            "S1": 2.381095356002277,
+            "S18": 2.7616246541341147,
+            "S21": 3.3028666680980576,
+            "S4": 3.2781308442929538,
+            "S8": 4.776822689493654,
+            "S9": 4.299160561542737
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ptt_ppg/patchtst": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 3.4587231181430385,
+      "window_hr_mae_sd": 0.000381208981711133,
+      "subject_macro_hr_mae_mean": 3.463209615735688,
+      "subject_macro_hr_mae_sd": 0.0003772579211165531,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/patchtst/seed42",
+          "seed": 42,
+          "window_hr_mae": 3.4585956687471926,
+          "subject_macro_hr_mae": 3.46310977809744,
+          "per_subject_hr_mae": {
+            "S1": 2.3776929995268006,
+            "S18": 2.7664814449491955,
+            "S21": 3.297085243722667,
+            "S4": 3.2820763017219927,
+            "S8": 4.761575809816127,
+            "S9": 4.293746868847858
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/patchtst/seed43",
+          "seed": 43,
+          "window_hr_mae": 3.4582118501532224,
+          "subject_macro_hr_mae": 3.4626978957481342,
+          "per_subject_hr_mae": {
+            "S1": 2.3787630000169675,
+            "S18": 2.7675291999937994,
+            "S21": 3.2956396713558394,
+            "S4": 3.287577389750241,
+            "S8": 4.751898814566993,
+            "S9": 4.294779298804966
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/patchtst/seed44",
+          "seed": 44,
+          "window_hr_mae": 3.4589663594668796,
+          "subject_macro_hr_mae": 3.4634051519908486,
+          "per_subject_hr_mae": {
+            "S1": 2.4013405018791727,
+            "S18": 2.7752973744793543,
+            "S21": 3.2951486179008787,
+            "S4": 3.2796328776591532,
+            "S8": 4.74559392712333,
+            "S9": 4.283417612903203
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/patchtst/seed45",
+          "seed": 45,
+          "window_hr_mae": 3.458632519698907,
+          "subject_macro_hr_mae": 3.4631237744693313,
+          "per_subject_hr_mae": {
+            "S1": 2.3789154700791055,
+            "S18": 2.766822754390656,
+            "S21": 3.2962473089044746,
+            "S4": 3.2867604848500847,
+            "S8": 4.754798044800287,
+            "S9": 4.295198583791379
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/ptt_ppg/patchtst/seed46",
+          "seed": 46,
+          "window_hr_mae": 3.459209192648988,
+          "subject_macro_hr_mae": 3.4637114783726872,
+          "per_subject_hr_mae": {
+            "S1": 2.380097098332114,
+            "S18": 2.764815497019934,
+            "S21": 3.297763658606488,
+            "S4": 3.283510716265233,
+            "S8": 4.7603577625138955,
+            "S9": 4.295724137498456
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "ptt_ppg/picdgn_v3": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 3.454375202598098,
+      "window_hr_mae_sd": 0.0037360060956350347,
+      "subject_macro_hr_mae_mean": 3.458880827898252,
+      "subject_macro_hr_mae_sd": 0.0037209696438136623,
+      "pat_mae_ms_mean": 33.06021957397461,
+      "pat_mae_ms_sd": 2.8376648059780214,
+      "runs": [
+        {
+          "path": "results_v3/ablation/ptt_ppg/learned_static/seed42",
+          "seed": 42,
+          "window_hr_mae": 3.457759830981318,
+          "subject_macro_hr_mae": 3.462254261125301,
+          "per_subject_hr_mae": {
+            "S1": 2.378123161875603,
+            "S18": 2.7675552368164062,
+            "S21": 3.295942796548836,
+            "S4": 3.2852715746316212,
+            "S8": 4.751961681682602,
+            "S9": 4.29467111519674
+          },
+          "pat_mae_ms": 33.09949493408203
+        },
+        {
+          "path": "results_v3/ablation/ptt_ppg/learned_static/seed43",
+          "seed": 43,
+          "window_hr_mae": 3.454400712559627,
+          "subject_macro_hr_mae": 3.4588995289481126,
+          "per_subject_hr_mae": {
+            "S1": 2.3773627230559535,
+            "S18": 2.7706725105406744,
+            "S21": 3.293588268898221,
+            "S4": 3.2792834554399763,
+            "S8": 4.741085551944175,
+            "S9": 4.291404663809675
+          },
+          "pat_mae_ms": 32.892822265625
+        },
+        {
+          "path": "results_v3/ablation/ptt_ppg/learned_static/seed44",
+          "seed": 44,
+          "window_hr_mae": 3.451367491362842,
+          "subject_macro_hr_mae": 3.455882264116735,
+          "per_subject_hr_mae": {
+            "S1": 2.373163499427118,
+            "S18": 2.7750552343943764,
+            "S21": 3.2927220536786104,
+            "S4": 3.274615267068723,
+            "S8": 4.731294843047975,
+            "S9": 4.28844268708361
+          },
+          "pat_mae_ms": 31.438331604003906
+        },
+        {
+          "path": "results_v3/ablation/ptt_ppg/learned_static/seed45",
+          "seed": 45,
+          "window_hr_mae": 3.4583720424894104,
+          "subject_macro_hr_mae": 3.4628633503249713,
+          "per_subject_hr_mae": {
+            "S1": 2.3788914625248854,
+            "S18": 2.7669459751674106,
+            "S21": 3.296058594473737,
+            "S4": 3.28631406217008,
+            "S8": 4.753927057439631,
+            "S9": 4.295042950174083
+          },
+          "pat_mae_ms": 37.67808532714844
+        },
+        {
+          "path": "results_v3/ablation/ptt_ppg/learned_static/seed46",
+          "seed": 46,
+          "window_hr_mae": 3.449975935597292,
+          "subject_macro_hr_mae": 3.45450473497614,
+          "per_subject_hr_mae": {
+            "S1": 2.376499610517936,
+            "S18": 2.77845393807169,
+            "S21": 3.2881680717581347,
+            "S4": 3.2657456849072433,
+            "S8": 4.732742718557124,
+            "S9": 4.28541838604471
+          },
+          "pat_mae_ms": 30.192363739013672
+        }
+      ]
+    },
+    "wesad/deep_ppg": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 5.0108485118115045,
+      "window_hr_mae_sd": 0.01701559944500283,
+      "subject_macro_hr_mae_mean": 4.992508788580151,
+      "subject_macro_hr_mae_sd": 0.017499714433521142,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/wesad/deep_ppg/seed42",
+          "seed": 42,
+          "window_hr_mae": 5.028761637389151,
+          "subject_macro_hr_mae": 5.010589745252867,
+          "per_subject_hr_mae": {
+            "S13": 4.742608445218102,
+            "S14": 5.17090715640441,
+            "S2": 4.240806175388105,
+            "S3": 5.88803720400085
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/deep_ppg/seed43",
+          "seed": 43,
+          "window_hr_mae": 4.985034939315584,
+          "subject_macro_hr_mae": 4.966049409749772,
+          "per_subject_hr_mae": {
+            "S13": 4.686487110702822,
+            "S14": 5.098628204957723,
+            "S2": 4.240342069445108,
+            "S3": 5.838740253893436
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/deep_ppg/seed44",
+          "seed": 44,
+          "window_hr_mae": 5.015079985660875,
+          "subject_macro_hr_mae": 4.997263865719477,
+          "per_subject_hr_mae": {
+            "S13": 4.733344751040722,
+            "S14": 5.165983480220506,
+            "S2": 4.219011113332493,
+            "S3": 5.870716118284184
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/deep_ppg/seed45",
+          "seed": 45,
+          "window_hr_mae": 5.004131219224033,
+          "subject_macro_hr_mae": 4.985134460175781,
+          "per_subject_hr_mae": {
+            "S13": 4.717138607715558,
+            "S14": 5.115083295862133,
+            "S2": 4.238026525017032,
+            "S3": 5.870289412108402
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/deep_ppg/seed46",
+          "seed": 46,
+          "window_hr_mae": 5.021234777467883,
+          "subject_macro_hr_mae": 5.003506462002861,
+          "per_subject_hr_mae": {
+            "S13": 4.747290776460218,
+            "S14": 5.159505047576473,
+            "S2": 4.241351794225419,
+            "S3": 5.865878229749333
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "wesad/gwn": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 5.030219448249564,
+      "window_hr_mae_sd": 0.004641114344002853,
+      "subject_macro_hr_mae_mean": 5.012557741455775,
+      "subject_macro_hr_mae_sd": 0.004460322531755889,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/wesad/gwn/seed42",
+          "seed": 42,
+          "window_hr_mae": 5.024151640366285,
+          "subject_macro_hr_mae": 5.007009093892362,
+          "per_subject_hr_mae": {
+            "S13": 4.756706868926611,
+            "S14": 5.177320250838913,
+            "S2": 4.2316127207907455,
+            "S3": 5.862396535013178
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/gwn/seed43",
+          "seed": 43,
+          "window_hr_mae": 5.035493474103447,
+          "subject_macro_hr_mae": 5.0184801667805505,
+          "per_subject_hr_mae": {
+            "S13": 4.783321974809253,
+            "S14": 5.180485445472905,
+            "S2": 4.234252418762233,
+            "S3": 5.875860828077812
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/gwn/seed44",
+          "seed": 44,
+          "window_hr_mae": 5.034085541759801,
+          "subject_macro_hr_mae": 5.015414706117885,
+          "per_subject_hr_mae": {
+            "S13": 4.750111115697969,
+            "S14": 5.150178512661916,
+            "S2": 4.269492044908645,
+            "S3": 5.8918771512030075
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/gwn/seed45",
+          "seed": 45,
+          "window_hr_mae": 5.027718953291575,
+          "subject_macro_hr_mae": 5.010533590685659,
+          "per_subject_hr_mae": {
+            "S13": 4.772184133529663,
+            "S14": 5.172821350497556,
+            "S2": 4.223343375912331,
+            "S3": 5.873785502803084
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/gwn/seed46",
+          "seed": 46,
+          "window_hr_mae": 5.029647631726713,
+          "subject_macro_hr_mae": 5.011351149802421,
+          "per_subject_hr_mae": {
+            "S13": 4.75891042409475,
+            "S14": 5.1466883317709184,
+            "S2": 4.2554759273703455,
+            "S3": 5.8843299159736695
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "wesad/itransformer": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 5.039515307662834,
+      "window_hr_mae_sd": 0.000527496885400252,
+      "subject_macro_hr_mae_mean": 5.021421030707979,
+      "subject_macro_hr_mae_sd": 0.0005387525591749847,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/wesad/itransformer/seed42",
+          "seed": 42,
+          "window_hr_mae": 5.039314300178463,
+          "subject_macro_hr_mae": 5.021215926161327,
+          "per_subject_hr_mae": {
+            "S13": 4.77161178030959,
+            "S14": 5.170829539964062,
+            "S2": 4.237440415253167,
+            "S3": 5.904981969118489
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/itransformer/seed43",
+          "seed": 43,
+          "window_hr_mae": 5.04044239908202,
+          "subject_macro_hr_mae": 5.022367762896256,
+          "per_subject_hr_mae": {
+            "S13": 4.774241368992891,
+            "S14": 5.170964295796731,
+            "S2": 4.238828311834549,
+            "S3": 5.905437074960854
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/itransformer/seed44",
+          "seed": 44,
+          "window_hr_mae": 5.039409080733601,
+          "subject_macro_hr_mae": 5.021313080716583,
+          "per_subject_hr_mae": {
+            "S13": 4.771849226036281,
+            "S14": 5.170833768470785,
+            "S2": 4.237558502806095,
+            "S3": 5.905010825553171
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/itransformer/seed45",
+          "seed": 45,
+          "window_hr_mae": 5.039275070744702,
+          "subject_macro_hr_mae": 5.021175678545447,
+          "per_subject_hr_mae": {
+            "S13": 4.771511803161509,
+            "S14": 5.170827759540179,
+            "S2": 4.237393332439368,
+            "S3": 5.904969819040729
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/itransformer/seed46",
+          "seed": 46,
+          "window_hr_mae": 5.039135687575381,
+          "subject_macro_hr_mae": 5.021032705220287,
+          "per_subject_hr_mae": {
+            "S13": 4.771136888856208,
+            "S14": 5.1708410570810575,
+            "S2": 4.2372286186947585,
+            "S3": 5.904924256249127
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "wesad/lstm": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 5.096415339896821,
+      "window_hr_mae_sd": 0.047949674748683405,
+      "subject_macro_hr_mae_mean": 5.080260349264788,
+      "subject_macro_hr_mae_sd": 0.04935115264127738,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/wesad/lstm/seed42",
+          "seed": 42,
+          "window_hr_mae": 5.036839161571274,
+          "subject_macro_hr_mae": 5.018053600053424,
+          "per_subject_hr_mae": {
+            "S13": 4.764939770184226,
+            "S14": 5.142425102435575,
+            "S2": 4.261128461271747,
+            "S3": 5.903721066322149
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/lstm/seed43",
+          "seed": 43,
+          "window_hr_mae": 5.106514950746145,
+          "subject_macro_hr_mae": 5.090131605050863,
+          "per_subject_hr_mae": {
+            "S13": 4.884995749925129,
+            "S14": 5.209972513949969,
+            "S2": 4.367988165873641,
+            "S3": 5.897569990454714
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/lstm/seed44",
+          "seed": 44,
+          "window_hr_mae": 5.157033303074348,
+          "subject_macro_hr_mae": 5.1412893673368645,
+          "per_subject_hr_mae": {
+            "S13": 4.986616709114647,
+            "S14": 5.245760511678245,
+            "S2": 4.373463883562477,
+            "S3": 5.959316364992091
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/lstm/seed45",
+          "seed": 45,
+          "window_hr_mae": 5.1209175473095,
+          "subject_macro_hr_mae": 5.10763655967108,
+          "per_subject_hr_mae": {
+            "S13": 4.929935568647367,
+            "S14": 5.297889975275685,
+            "S2": 4.336620566652699,
+            "S3": 5.8661001281085685
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/lstm/seed46",
+          "seed": 46,
+          "window_hr_mae": 5.06077173678284,
+          "subject_macro_hr_mae": 5.044190614211706,
+          "per_subject_hr_mae": {
+            "S13": 4.823988947615545,
+            "S14": 5.202373750935713,
+            "S2": 4.258437042075797,
+            "S3": 5.89196271621977
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "wesad/mtgnn": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 5.013281016599419,
+      "window_hr_mae_sd": 0.013151199525357427,
+      "subject_macro_hr_mae_mean": 4.9957183893899835,
+      "subject_macro_hr_mae_sd": 0.013446913914886031,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/wesad/mtgnn/seed42",
+          "seed": 42,
+          "window_hr_mae": 5.017784494518215,
+          "subject_macro_hr_mae": 5.000324434577313,
+          "per_subject_hr_mae": {
+            "S13": 4.768105176510715,
+            "S14": 5.1483475146993465,
+            "S2": 4.215946782556853,
+            "S3": 5.868898264542338
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/mtgnn/seed43",
+          "seed": 43,
+          "window_hr_mae": 5.00243552793295,
+          "subject_macro_hr_mae": 4.984962806244763,
+          "per_subject_hr_mae": {
+            "S13": 4.7488930613292855,
+            "S14": 5.125942608608152,
+            "S2": 4.2248166722252485,
+            "S3": 5.8401988828163685
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/mtgnn/seed44",
+          "seed": 44,
+          "window_hr_mae": 5.011658778773923,
+          "subject_macro_hr_mae": 4.993940875309081,
+          "per_subject_hr_mae": {
+            "S13": 4.748196138106491,
+            "S14": 5.146248018948078,
+            "S2": 4.216557154582127,
+            "S3": 5.864762189599626
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/mtgnn/seed45",
+          "seed": 45,
+          "window_hr_mae": 5.001145387090679,
+          "subject_macro_hr_mae": 4.9830716607310945,
+          "per_subject_hr_mae": {
+            "S13": 4.733417419454515,
+            "S14": 5.126802480481599,
+            "S2": 4.214197564699802,
+            "S3": 5.857869178288461
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/mtgnn/seed46",
+          "seed": 46,
+          "window_hr_mae": 5.033380894681327,
+          "subject_macro_hr_mae": 5.016292170087672,
+          "per_subject_hr_mae": {
+            "S13": 4.763611303604935,
+            "S14": 5.198751251373708,
+            "S2": 4.221770831573435,
+            "S3": 5.88103529379861
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "wesad/patchtst": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 5.03175612662083,
+      "window_hr_mae_sd": 0.009299572828074318,
+      "subject_macro_hr_mae_mean": 5.013691896397298,
+      "subject_macro_hr_mae_sd": 0.009776166384067487,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/canonical/h8/wesad/patchtst/seed42",
+          "seed": 42,
+          "window_hr_mae": 5.0270737339288765,
+          "subject_macro_hr_mae": 5.008205574431386,
+          "per_subject_hr_mae": {
+            "S13": 4.744134322380889,
+            "S14": 5.140457695793215,
+            "S2": 4.25402536970917,
+            "S3": 5.89420490984227
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/patchtst/seed43",
+          "seed": 43,
+          "window_hr_mae": 5.026799454953935,
+          "subject_macro_hr_mae": 5.009305396410816,
+          "per_subject_hr_mae": {
+            "S13": 4.767723865439295,
+            "S14": 5.149264108297927,
+            "S2": 4.263031461688745,
+            "S3": 5.857202150217296
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/patchtst/seed44",
+          "seed": 44,
+          "window_hr_mae": 5.047250593523694,
+          "subject_macro_hr_mae": 5.029699111603679,
+          "per_subject_hr_mae": {
+            "S13": 4.785799142647487,
+            "S14": 5.17374913325175,
+            "S2": 4.276234106331791,
+            "S3": 5.883014064183688
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/patchtst/seed45",
+          "seed": 45,
+          "window_hr_mae": 5.024234219774222,
+          "subject_macro_hr_mae": 5.005243887709372,
+          "per_subject_hr_mae": {
+            "S13": 4.735830421203669,
+            "S14": 5.143518449506003,
+            "S2": 4.242819060312146,
+            "S3": 5.898807619815666
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/canonical/h8/wesad/patchtst/seed46",
+          "seed": 46,
+          "window_hr_mae": 5.033422630923426,
+          "subject_macro_hr_mae": 5.016005511831236,
+          "per_subject_hr_mae": {
+            "S13": 4.773914980060222,
+            "S14": 5.1568248126326415,
+            "S2": 4.2732876431218605,
+            "S3": 5.8599946115102215
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    },
+    "wesad/picdgn_v3": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "window_hr_mae_mean": 4.90652904947344,
+      "window_hr_mae_sd": 0.1631457183441562,
+      "subject_macro_hr_mae_mean": 4.900388350127206,
+      "subject_macro_hr_mae_sd": 0.16761362529665094,
+      "pat_mae_ms_mean": null,
+      "pat_mae_ms_sd": null,
+      "runs": [
+        {
+          "path": "results_v3/ablation/wesad/learned_static/seed42",
+          "seed": 42,
+          "window_hr_mae": 5.023196673597026,
+          "subject_macro_hr_mae": 5.009971114107251,
+          "per_subject_hr_mae": {
+            "S13": 4.901288726430052,
+            "S14": 5.077195778692866,
+            "S2": 4.362572781760199,
+            "S3": 5.698827169545887
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/ablation/wesad/learned_static/seed43",
+          "seed": 43,
+          "window_hr_mae": 4.802216807644592,
+          "subject_macro_hr_mae": 4.79969539558655,
+          "per_subject_hr_mae": {
+            "S13": 5.079679189260089,
+            "S14": 4.629371216434072,
+            "S2": 4.397697480440338,
+            "S3": 5.0920336962117005
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/ablation/wesad/learned_static/seed44",
+          "seed": 44,
+          "window_hr_mae": 4.7457836465957834,
+          "subject_macro_hr_mae": 4.734350815878053,
+          "per_subject_hr_mae": {
+            "S13": 4.659249692773906,
+            "S14": 4.813395530610271,
+            "S2": 4.083438970006116,
+            "S3": 5.381319070121919
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/ablation/wesad/learned_static/seed45",
+          "seed": 45,
+          "window_hr_mae": 4.830516137717626,
+          "subject_macro_hr_mae": 4.820353117902036,
+          "per_subject_hr_mae": {
+            "S13": 4.673815118765265,
+            "S14": 4.84057791535161,
+            "S2": 4.5402311465686696,
+            "S3": 5.226788290922601
+          },
+          "pat_mae_ms": null
+        },
+        {
+          "path": "results_v3/ablation/wesad/learned_static/seed46",
+          "seed": 46,
+          "window_hr_mae": 5.130931981812176,
+          "subject_macro_hr_mae": 5.137571307162141,
+          "per_subject_hr_mae": {
+            "S13": 5.575477171205733,
+            "S14": 5.0846295960947065,
+            "S2": 4.61950022442977,
+            "S3": 5.270678236918353
+          },
+          "pat_mae_ms": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "definition": "Fourth-order zero-phase 0.5--8 Hz filtering performed independently inside each interval; interval R peaks require the full 80--450 ms search support before the interval endpoint; PAT is the median ECG-R to maximum-PPG-upstroke delay",
+  "future_pat_role": "PI-DDGN training target and held-out diagnostic",
+  "current_pat_role": "External persistence baseline only, stored as baseline_current_pat.npy; not discoverable by PhysioWindowDataset and not supplied to PI-DDGN",
+  "splits": {
+    "train": {
+      "windows": 3314,
+      "current_pat_quantiles_ms": [
+        96.00000083446503,
+        101.99999809265137,
+        153.99999916553497,
+        261.9999945163727,
+        286.00001335144043
+      ],
+      "future_pat_quantiles_ms": [
+        79.99999821186066,
+        101.99999809265137,
+        159.9999964237213,
+        263.9999985694885,
+        385.99997758865356
+      ],
+      "baseline_current_pat_sha256": "deb69f789210a3482853062705f787647cf9136b6c932d2103916d979214004b",
+      "future_pat_sha256": "362f2282a802ea7e875e34bf4bf5bb1e39e761517e33b860c15c3cd3fac5b7e0"
+    },
+    "val": {
+      "windows": 777,
+      "current_pat_quantiles_ms": [
+        97.99999743700027,
+        103.00000011920929,
+        186.0000044107437,
+        231.99999332427979,
+        241.99999868869781
+      ],
+      "future_pat_quantiles_ms": [
+        79.99999821186066,
+        101.99999809265137,
+        202.00000703334808,
+        240.19999504089347,
+        319.0000057220459
+      ],
+      "baseline_current_pat_sha256": "8f9783cc91c87aab978b4c17befd9820003a80d130823c0a03ef3f8a391310f6",
+      "future_pat_sha256": "aede6daaaec4e15a2d0c35c6e8e712461f78ff809912a7b43485f1f90421bc77"
+    },
+    "test": {
+      "windows": 1529,
+      "current_pat_quantiles_ms": [
+        97.99999743700027,
+        112.0000034570694,
+        133.00000131130219,
+        241.99999868869781,
+        254.99999523162842
+      ],
+      "future_pat_quantiles_ms": [
+        79.99999821186066,
+        105.99999874830246,
+        136.00000739097595,
+        246.0000067949295,
+        317.9999887943268
+      ],
+      "baseline_current_pat_sha256": "dce640234af786de1b0146b68ec28d0a094389f1a30a83385c40e540c012c984",
+      "future_pat_sha256": "daddfeed007cd98e6d015a95f9995e0d23e1c00a72701a4006cfc98eaa7b7daf"
+    }
+  }
+}

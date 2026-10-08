@@ -1,0 +1,7 @@
+name: cross
+train_datasets: [ppg_dalia]
+test_dataset: ppg_dalia
+processed_roots:
+  ppg_dalia: data/processed_v3/ppg_dalia_h8
+common_nodes: [ecg]
+target_names: [hr]

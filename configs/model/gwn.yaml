@@ -1,0 +1,4 @@
+name: graph_wavenet
+hidden_size: 128
+dilations: [1, 2, 4, 8]
+adaptive_adj: true

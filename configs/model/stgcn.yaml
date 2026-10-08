@@ -1,0 +1,4 @@
+name: stgcn
+hidden_size: 128
+kernel_size: 3
+graph: correlation

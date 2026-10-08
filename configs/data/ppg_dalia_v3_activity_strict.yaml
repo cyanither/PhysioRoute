@@ -1,0 +1,4 @@
+name: ppg_dalia
+processed_dir: data/processed_v3/ppg_dalia_h8
+protocol: cross_activity
+activity_holdout: [2, 3, 4]

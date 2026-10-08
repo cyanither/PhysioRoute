@@ -1,0 +1,3 @@
+name: fouriergnn
+hidden_size: 128
+modes: 32

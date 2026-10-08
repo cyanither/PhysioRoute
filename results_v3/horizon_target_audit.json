@@ -1,0 +1,340 @@
+{
+  "WESAD": {
+    "8": {
+      "train": {
+        "windows": 9860,
+        "subjects": 9,
+        "target_mean_bpm": 79.24562381527728,
+        "target_sd_bpm": 16.87613877878405,
+        "target_iqr_bpm": 19.852827072143555,
+        "adjacent_5s_stride_target_r": 0.9483953591197976,
+        "current_hr_persistence_window_mae_bpm": 5.572309624399181,
+        "current_hr_persistence_subject_macro_mae_bpm": 5.5630153580178625,
+        "per_subject_persistence_mae_bpm": {
+          "S10": 5.711958490023956,
+          "S11": 5.065309513468346,
+          "S15": 4.842715400394156,
+          "S16": 5.688679588023114,
+          "S17": 7.793785290673286,
+          "S4": 4.748998264096818,
+          "S7": 6.541555019507662,
+          "S8": 4.737350965429235,
+          "S9": 4.936785690544188
+        }
+      },
+      "val": {
+        "windows": 2640,
+        "subjects": 2,
+        "target_mean_bpm": 70.48024564511849,
+        "target_sd_bpm": 8.450503011861827,
+        "target_iqr_bpm": 10.077577590942383,
+        "adjacent_5s_stride_target_r": 0.8600306450851642,
+        "current_hr_persistence_window_mae_bpm": 4.292056946320967,
+        "current_hr_persistence_subject_macro_mae_bpm": 4.262146725277253,
+        "per_subject_persistence_mae_bpm": {
+          "S5": 3.774720900861172,
+          "S6": 4.749572549693334
+        }
+      },
+      "test": {
+        "windows": 4680,
+        "subjects": 4,
+        "target_mean_bpm": 76.35368176240188,
+        "target_sd_bpm": 17.76413793618881,
+        "target_iqr_bpm": 18.629131317138672,
+        "adjacent_5s_stride_target_r": 0.9572828755434298,
+        "current_hr_persistence_window_mae_bpm": 5.0464828613476875,
+        "current_hr_persistence_subject_macro_mae_bpm": 5.028099789678739,
+        "per_subject_persistence_mae_bpm": {
+          "S13": 4.7624113999947335,
+          "S14": 5.186437514660678,
+          "S2": 4.24561262566748,
+          "S3": 5.917937618392067
+        }
+      }
+    },
+    "30": {
+      "train": {
+        "windows": 9820,
+        "subjects": 9,
+        "target_mean_bpm": 79.18304273446077,
+        "target_sd_bpm": 16.24252890439017,
+        "target_iqr_bpm": 18.360225677490234,
+        "adjacent_5s_stride_target_r": 0.9940115848039787,
+        "current_hr_persistence_window_mae_bpm": 5.023361550232058,
+        "current_hr_persistence_subject_macro_mae_bpm": 5.004221260399711,
+        "per_subject_persistence_mae_bpm": {
+          "S10": 5.305261721232021,
+          "S11": 4.3493632028355425,
+          "S15": 4.147633030938502,
+          "S16": 5.498076800938874,
+          "S17": 7.49676868991149,
+          "S4": 4.374913544568285,
+          "S7": 6.063715918087265,
+          "S8": 3.7032465597953936,
+          "S9": 4.099011875290021
+        }
+      },
+      "val": {
+        "windows": 2631,
+        "subjects": 2,
+        "target_mean_bpm": 70.44404371951026,
+        "target_sd_bpm": 7.5212421155003275,
+        "target_iqr_bpm": 8.731849670410156,
+        "adjacent_5s_stride_target_r": 0.9823572606379852,
+        "current_hr_persistence_window_mae_bpm": 3.6843805258738955,
+        "current_hr_persistence_subject_macro_mae_bpm": 3.6545868465329727,
+        "per_subject_persistence_mae_bpm": {
+          "S5": 3.1736839609748926,
+          "S6": 4.135489732091053
+        }
+      },
+      "test": {
+        "windows": 4661,
+        "subjects": 4,
+        "target_mean_bpm": 76.30833181345623,
+        "target_sd_bpm": 17.24853029249306,
+        "target_iqr_bpm": 17.473793029785156,
+        "adjacent_5s_stride_target_r": 0.995372823965358,
+        "current_hr_persistence_window_mae_bpm": 4.486548616302497,
+        "current_hr_persistence_subject_macro_mae_bpm": 4.469410997062951,
+        "per_subject_persistence_mae_bpm": {
+          "S13": 3.9110189875331494,
+          "S14": 5.094060366843646,
+          "S2": 3.369600149546322,
+          "S3": 5.502964484328688
+        }
+      }
+    }
+  },
+  "PPG-DaLiA": {
+    "8": {
+      "train": {
+        "windows": 15215,
+        "subjects": 9,
+        "target_mean_bpm": 87.67271910863921,
+        "target_sd_bpm": 20.7382617761667,
+        "target_iqr_bpm": 24.227195739746094,
+        "adjacent_5s_stride_target_r": 0.978421924910802,
+        "current_hr_persistence_window_mae_bpm": 5.20747537152218,
+        "current_hr_persistence_subject_macro_mae_bpm": 5.2444674025639095,
+        "per_subject_persistence_mae_bpm": {
+          "S10": 3.2013031261734204,
+          "S13": 6.521961161688118,
+          "S14": 5.962898706840356,
+          "S15": 4.756153431241475,
+          "S3": 5.238654773723152,
+          "S6": 5.5113361766966005,
+          "S7": 6.1748790309346955,
+          "S8": 4.649952260836615,
+          "S9": 5.183067954940751
+        }
+      },
+      "val": {
+        "windows": 3665,
+        "subjects": 2,
+        "target_mean_bpm": 106.97527933680182,
+        "target_sd_bpm": 25.299711134453776,
+        "target_iqr_bpm": 36.53002166748047,
+        "adjacent_5s_stride_target_r": 0.9905883661584661,
+        "current_hr_persistence_window_mae_bpm": 4.786798073845378,
+        "current_hr_persistence_subject_macro_mae_bpm": 4.78751833094015,
+        "per_subject_persistence_mae_bpm": {
+          "S4": 4.872671306822152,
+          "S5": 4.7023653550581495
+        }
+      },
+      "test": {
+        "windows": 6824,
+        "subjects": 4,
+        "target_mean_bpm": 83.10137434050458,
+        "target_sd_bpm": 21.553870109791067,
+        "target_iqr_bpm": 25.538105010986328,
+        "adjacent_5s_stride_target_r": 0.9816188351623214,
+        "current_hr_persistence_window_mae_bpm": 4.939935683086078,
+        "current_hr_persistence_subject_macro_mae_bpm": 4.898800596300085,
+        "per_subject_persistence_mae_bpm": {
+          "S1": 5.409531649114526,
+          "S11": 5.561536448228737,
+          "S12": 3.760067292231663,
+          "S2": 4.864066995625414
+        }
+      }
+    },
+    "30": {
+      "train": {
+        "windows": 15175,
+        "subjects": 9,
+        "target_mean_bpm": 87.66968471168883,
+        "target_sd_bpm": 20.41005619746879,
+        "target_iqr_bpm": 23.220287322998047,
+        "adjacent_5s_stride_target_r": 0.997222817143997,
+        "current_hr_persistence_window_mae_bpm": 5.160776457433056,
+        "current_hr_persistence_subject_macro_mae_bpm": 5.1962092235673145,
+        "per_subject_persistence_mae_bpm": {
+          "S10": 3.171441553216992,
+          "S13": 6.695040830327661,
+          "S14": 5.525733517686571,
+          "S15": 4.961466100413329,
+          "S3": 4.870825108043863,
+          "S6": 5.4153126054673315,
+          "S7": 6.223151808233276,
+          "S8": 4.4102491005425755,
+          "S9": 5.492662388174232
+        }
+      },
+      "val": {
+        "windows": 3657,
+        "subjects": 2,
+        "target_mean_bpm": 106.96661450701852,
+        "target_sd_bpm": 25.12981646194761,
+        "target_iqr_bpm": 36.82383728027344,
+        "adjacent_5s_stride_target_r": 0.9986059142604011,
+        "current_hr_persistence_window_mae_bpm": 4.9366775932030365,
+        "current_hr_persistence_subject_macro_mae_bpm": 4.935900730638661,
+        "per_subject_persistence_mae_bpm": {
+          "S4": 4.844256008125049,
+          "S5": 5.027545453152274
+        }
+      },
+      "test": {
+        "windows": 6806,
+        "subjects": 4,
+        "target_mean_bpm": 83.1046322473105,
+        "target_sd_bpm": 21.276985742872366,
+        "target_iqr_bpm": 25.31041145324707,
+        "adjacent_5s_stride_target_r": 0.9976043705510081,
+        "current_hr_persistence_window_mae_bpm": 4.892734047808158,
+        "current_hr_persistence_subject_macro_mae_bpm": 4.856111654864523,
+        "per_subject_persistence_mae_bpm": {
+          "S1": 5.401640627090245,
+          "S11": 5.396562614611217,
+          "S12": 4.028909591821055,
+          "S2": 4.597333785935576
+        }
+      }
+    }
+  },
+  "PTT-PPG": {
+    "8": {
+      "train": {
+        "windows": 3314,
+        "subjects": 13,
+        "target_mean_bpm": 83.23868603611395,
+        "target_sd_bpm": 12.099365721589855,
+        "target_iqr_bpm": 17.229724884033203,
+        "adjacent_5s_stride_target_r": 0.9587908818515619,
+        "current_hr_persistence_window_mae_bpm": 3.1756245884178775,
+        "current_hr_persistence_subject_macro_mae_bpm": 3.182433597912731,
+        "per_subject_persistence_mae_bpm": {
+          "S10": 3.937823704310826,
+          "S11": 3.551402414877584,
+          "S13": 3.9585264599512495,
+          "S14": 2.061028307817114,
+          "S15": 4.304259983573373,
+          "S16": 1.7706618571844626,
+          "S17": 2.715904326665969,
+          "S19": 3.7177248895168304,
+          "S20": 3.9586405158042908,
+          "S22": 5.084863715492219,
+          "S3": 2.8993441413430605,
+          "S6": 1.656040293182257,
+          "S7": 1.7554161631462657
+        }
+      },
+      "val": {
+        "windows": 777,
+        "subjects": 3,
+        "target_mean_bpm": 100.48431462271947,
+        "target_sd_bpm": 22.691169915284195,
+        "target_iqr_bpm": 37.86857604980469,
+        "adjacent_5s_stride_target_r": 0.992335222164267,
+        "current_hr_persistence_window_mae_bpm": 2.44720493351017,
+        "current_hr_persistence_subject_macro_mae_bpm": 2.445666950766145,
+        "per_subject_persistence_mae_bpm": {
+          "S12": 2.629582268851144,
+          "S2": 2.069516252450906,
+          "S5": 2.6379023309963854
+        }
+      },
+      "test": {
+        "windows": 1529,
+        "subjects": 6,
+        "target_mean_bpm": 84.52221535731952,
+        "target_sd_bpm": 8.489382802879806,
+        "target_iqr_bpm": 12.370574951171875,
+        "adjacent_5s_stride_target_r": 0.9095047481600443,
+        "current_hr_persistence_window_mae_bpm": 3.459059486364211,
+        "current_hr_persistence_subject_macro_mae_bpm": 3.463557465491102,
+        "per_subject_persistence_mae_bpm": {
+          "S1": 2.3792522828091065,
+          "S18": 2.7657235160706537,
+          "S21": 3.297012298945853,
+          "S4": 3.285321975766922,
+          "S8": 4.758332354277961,
+          "S9": 4.295702365076118
+        }
+      }
+    },
+    "30": {
+      "train": {
+        "windows": 3146,
+        "subjects": 13,
+        "target_mean_bpm": 83.18803472694741,
+        "target_sd_bpm": 11.725694200691231,
+        "target_iqr_bpm": 16.586772918701172,
+        "adjacent_5s_stride_target_r": 0.9958676812797655,
+        "current_hr_persistence_window_mae_bpm": 2.538297385223641,
+        "current_hr_persistence_subject_macro_mae_bpm": 2.544871877397876,
+        "per_subject_persistence_mae_bpm": {
+          "S10": 3.474177773793538,
+          "S11": 2.4506510184513584,
+          "S13": 3.4258315404256185,
+          "S14": 1.6627093228426846,
+          "S15": 3.0809577718439463,
+          "S16": 1.2773955570711635,
+          "S17": 1.9839525103070248,
+          "S19": 3.3030642674974175,
+          "S20": 3.3295084321449813,
+          "S22": 4.107047049204509,
+          "S3": 2.348729724726401,
+          "S6": 1.2424940490722656,
+          "S7": 1.3968153887914743
+        }
+      },
+      "val": {
+        "windows": 737,
+        "subjects": 3,
+        "target_mean_bpm": 100.44666355500551,
+        "target_sd_bpm": 22.50886526362304,
+        "target_iqr_bpm": 36.668174743652344,
+        "adjacent_5s_stride_target_r": 0.9993269044639232,
+        "current_hr_persistence_window_mae_bpm": 1.9764862578144875,
+        "current_hr_persistence_subject_macro_mae_bpm": 1.9736901448333413,
+        "per_subject_persistence_mae_bpm": {
+          "S12": 1.9782196747209237,
+          "S2": 1.7959228327244887,
+          "S5": 2.146927927054611
+        }
+      },
+      "test": {
+        "windows": 1450,
+        "subjects": 6,
+        "target_mean_bpm": 84.55686056465939,
+        "target_sd_bpm": 7.949583671038346,
+        "target_iqr_bpm": 12.222562789916992,
+        "adjacent_5s_stride_target_r": 0.9900639817607785,
+        "current_hr_persistence_window_mae_bpm": 2.769888552961678,
+        "current_hr_persistence_subject_macro_mae_bpm": 2.7730161913014997,
+        "per_subject_persistence_mae_bpm": {
+          "S1": 1.7295208132363917,
+          "S18": 2.051422535872259,
+          "S21": 2.5768636385599772,
+          "S4": 2.820134418766673,
+          "S8": 4.464878781636556,
+          "S9": 2.995276959737142
+        }
+      }
+    }
+  }
+}

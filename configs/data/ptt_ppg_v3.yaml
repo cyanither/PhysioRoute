@@ -1,0 +1,21 @@
+name: ptt_ppg
+raw_dir: data/raw/ptt_ppg/physionet.org/files/pulse-transit-time-ppg/1.1.0
+processed_dir: data/processed_v3/ptt_ppg_h8
+target_fs: 64
+input_sec: 60
+horizon_sec: 8
+stride_sec: 5
+pat_ppg_key: pleth_2
+output_dtype: float32
+subject_split: {train: 0.60, val: 0.15, test: 0.25, seed: 42}
+nodes:
+  - {name: ecg, key: ecg, fs: 500, filter: ecg}
+  - {name: finger_ppg_red, key: pleth_1, fs: 500, filter: ppg}
+  - {name: finger_ppg_ir, key: pleth_2, fs: 500, filter: ppg}
+  - {name: finger_ppg_green, key: pleth_3, fs: 500, filter: ppg}
+  - {name: proximal_ppg_red, key: pleth_4, fs: 500, filter: ppg}
+  - {name: proximal_ppg_ir, key: pleth_5, fs: 500, filter: ppg}
+  - {name: proximal_ppg_green, key: pleth_6, fs: 500, filter: ppg}
+  - {name: acc_x, key: a_x, fs: 500, filter: none}
+  - {name: acc_y, key: a_y, fs: 500, filter: none}
+  - {name: acc_z, key: a_z, fs: 500, filter: none}

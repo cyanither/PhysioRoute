@@ -1,0 +1,36 @@
+name: picdgn
+d_model: 128
+num_heads: 4
+transformer_layers: 2
+tcn_channels: 128
+tcn_kernel_size: 5
+tcn_dilations: [1, 2, 4, 8]
+chunk_sec: 2
+message_passing_steps: 2
+tau_min_ms: 0
+tau_max_ms: 800
+gumbel_temperature_start: 1.0
+gumbel_temperature_end: 0.1
+uncertainty_threshold: 0.35
+heads:
+  waveform: true
+  hr: true
+  bp: true
+  stress: true
+loss:
+  lambda_wave: 1.0
+  lambda_hr: 1.0
+  lambda_bp: 1.0
+  lambda_stress: 1.0
+  lambda_ptt: 0.5
+  lambda_dir: 0.1
+  lambda_sp: 0.001
+  lambda_unc: 0.01
+ablations:
+  graph_type: dynamic
+  directed: true
+  delay_mode: learned_ptt_prior
+  use_ptt_prior: true
+  use_direction_prior: true
+  use_sparsity: true
+  use_edge_uncertainty: true

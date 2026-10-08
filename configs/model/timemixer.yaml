@@ -1,0 +1,4 @@
+name: timemixer
+d_model: 128
+scales: [1, 2, 4]
+num_layers: 3

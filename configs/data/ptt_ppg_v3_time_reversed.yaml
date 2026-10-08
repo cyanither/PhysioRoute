@@ -1,0 +1,6 @@
+defaults:
+  - ptt_ppg_v3
+  - _self_
+
+processed_dir: data/processed_v3/ptt_ppg_h8_time_reversed
+

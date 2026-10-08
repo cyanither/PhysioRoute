@@ -1,0 +1,1102 @@
+{
+  "wesad_h8": {
+    "metadata": {
+      "dataset": "wesad",
+      "protocol_version": "v3.0",
+      "target_fs": 64.0,
+      "input_steps": 3840,
+      "horizon_steps": 512,
+      "short_steps": 1,
+      "stride_steps": 320,
+      "node_names": [
+        "ecg",
+        "resp",
+        "wrist_bvp",
+        "wrist_eda",
+        "wrist_temp",
+        "wrist_acc_x",
+        "wrist_acc_y",
+        "wrist_acc_z"
+      ],
+      "splits": {
+        "train": [
+          "S4",
+          "S7",
+          "S8",
+          "S9",
+          "S10",
+          "S11",
+          "S15",
+          "S16",
+          "S17"
+        ],
+        "val": [
+          "S5",
+          "S6"
+        ],
+        "test": [
+          "S2",
+          "S3",
+          "S13",
+          "S14"
+        ]
+      },
+      "split_counts": {
+        "train": 9860,
+        "val": 2640,
+        "test": 4680
+      },
+      "valid_hr_counts": {
+        "train": 9860,
+        "val": 2640,
+        "test": 4680
+      },
+      "valid_pat_counts": null,
+      "activity_pure_counts": {
+        "train": 9860,
+        "val": 2640,
+        "test": 4680
+      },
+      "targets": [
+        "hr"
+      ],
+      "target_definition": {
+        "hr": "60 divided by the mean of valid complete ECG RR intervals wholly contained in the future horizon",
+        "pat": null
+      },
+      "preprocessing": {
+        "filtering": "causal fourth-order Butterworth SOS with steady-state initialization",
+        "resampling": "causal anti-alias low-pass followed by previous-sample alignment",
+        "normalization": "per-node z-score using the current input window only",
+        "future_information_in_input": false,
+        "bp_endpoint_interpolation": false
+      },
+      "record_identifiers_saved": true,
+      "input_only_baseline_metadata": [
+        "current_hr"
+      ],
+      "source_sha256": "37a0c3f3f29ff335dc5345e532af7d6eef405308a0bb490114a0f4d1640ba0ba",
+      "target_summary": {
+        "hr_train_mean": 79.2456283569336,
+        "hr_train_std": 16.875282287597656
+      },
+      "hr_prediction_mode": "residual_to_input_period_hr"
+    },
+    "splits": {
+      "train": {
+        "windows": 9860,
+        "subjects": [
+          "S10",
+          "S11",
+          "S15",
+          "S16",
+          "S17",
+          "S4",
+          "S7",
+          "S8",
+          "S9"
+        ],
+        "records": 9,
+        "hr_bpm_quantiles": [
+          49.980167388916016,
+          54.50039524078369,
+          75.9493637084961,
+          131.80711334228513,
+          154.32217407226562
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 9860,
+        "sample_max_abs_channel_mean": 0.0005594531539827585,
+        "sample_max_abs_channel_std_error": 2.980232238769531e-07
+      },
+      "val": {
+        "windows": 2640,
+        "subjects": [
+          "S5",
+          "S6"
+        ],
+        "records": 2,
+        "hr_bpm_quantiles": [
+          53.38983154296875,
+          58.717796325683594,
+          67.98179244995117,
+          96.78546524047856,
+          102.50152587890625
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 2640,
+        "sample_max_abs_channel_mean": 0.0006047665956430137,
+        "sample_max_abs_channel_std_error": 2.980232238769531e-07
+      },
+      "test": {
+        "windows": 4680,
+        "subjects": [
+          "S13",
+          "S14",
+          "S2",
+          "S3"
+        ],
+        "records": 4,
+        "hr_bpm_quantiles": [
+          38.11252212524414,
+          47.608253479003906,
+          74.84407424926758,
+          134.56593551635743,
+          152.0
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 4680,
+        "sample_max_abs_channel_mean": 0.0005452235345728695,
+        "sample_max_abs_channel_std_error": 2.980232238769531e-07
+      }
+    }
+  },
+  "ppg_dalia_h8": {
+    "metadata": {
+      "dataset": "ppg_dalia",
+      "protocol_version": "v3.0",
+      "target_fs": 64.0,
+      "input_steps": 3840,
+      "horizon_steps": 512,
+      "short_steps": 1,
+      "stride_steps": 320,
+      "node_names": [
+        "ecg",
+        "resp",
+        "wrist_bvp",
+        "wrist_eda",
+        "wrist_temp",
+        "wrist_acc_x",
+        "wrist_acc_y",
+        "wrist_acc_z"
+      ],
+      "splits": {
+        "train": [
+          "S3",
+          "S6",
+          "S7",
+          "S8",
+          "S9",
+          "S10",
+          "S13",
+          "S14",
+          "S15"
+        ],
+        "val": [
+          "S4",
+          "S5"
+        ],
+        "test": [
+          "S1",
+          "S2",
+          "S11",
+          "S12"
+        ]
+      },
+      "split_counts": {
+        "train": 15215,
+        "val": 3665,
+        "test": 6824
+      },
+      "valid_hr_counts": {
+        "train": 15215,
+        "val": 3665,
+        "test": 6824
+      },
+      "valid_pat_counts": null,
+      "activity_pure_counts": {
+        "train": 13491,
+        "val": 3272,
+        "test": 6038
+      },
+      "targets": [
+        "hr"
+      ],
+      "target_definition": {
+        "hr": "60 divided by the mean of valid complete ECG RR intervals wholly contained in the future horizon",
+        "pat": null
+      },
+      "preprocessing": {
+        "filtering": "causal fourth-order Butterworth SOS with steady-state initialization",
+        "resampling": "causal anti-alias low-pass followed by previous-sample alignment",
+        "normalization": "per-node z-score using the current input window only",
+        "future_information_in_input": false,
+        "bp_endpoint_interpolation": false
+      },
+      "record_identifiers_saved": true,
+      "input_only_baseline_metadata": [
+        "current_hr"
+      ],
+      "source_sha256": "37a0c3f3f29ff335dc5345e532af7d6eef405308a0bb490114a0f4d1640ba0ba",
+      "target_summary": {
+        "hr_train_mean": 87.67271423339844,
+        "hr_train_std": 20.737581253051758
+      },
+      "hr_prediction_mode": "residual_to_input_period_hr"
+    },
+    "splits": {
+      "train": {
+        "windows": 15215,
+        "subjects": [
+          "S10",
+          "S13",
+          "S14",
+          "S15",
+          "S3",
+          "S6",
+          "S7",
+          "S8",
+          "S9"
+        ],
+        "records": 9,
+        "hr_bpm_quantiles": [
+          42.715484619140625,
+          51.30527297973633,
+          84.4390869140625,
+          152.2468258666994,
+          174.20814514160156
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 13491,
+        "sample_max_abs_channel_mean": 0.0004908879636786878,
+        "sample_max_abs_channel_std_error": 2.384185791015625e-07
+      },
+      "val": {
+        "windows": 3665,
+        "subjects": [
+          "S4",
+          "S5"
+        ],
+        "records": 2,
+        "hr_bpm_quantiles": [
+          56.06229019165039,
+          59.478050231933594,
+          104.1587142944336,
+          174.20340454101571,
+          186.94361877441406
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 3272,
+        "sample_max_abs_channel_mean": 0.0005163431051187217,
+        "sample_max_abs_channel_std_error": 1.7881393432617188e-07
+      },
+      "test": {
+        "windows": 6824,
+        "subjects": [
+          "S1",
+          "S11",
+          "S12",
+          "S2"
+        ],
+        "records": 4,
+        "hr_bpm_quantiles": [
+          41.74950408935547,
+          43.99960674285889,
+          77.8907699584961,
+          147.38755706787097,
+          171.04776000976562
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 6038,
+        "sample_max_abs_channel_mean": 0.0004452228604350239,
+        "sample_max_abs_channel_std_error": 2.980232238769531e-07
+      }
+    }
+  },
+  "ptt_ppg_h8": {
+    "metadata": {
+      "dataset": "ptt_ppg",
+      "protocol_version": "v3.0",
+      "target_fs": 64.0,
+      "input_steps": 3840,
+      "horizon_steps": 512,
+      "short_steps": 1,
+      "stride_steps": 320,
+      "node_names": [
+        "ecg",
+        "finger_ppg_red",
+        "finger_ppg_ir",
+        "finger_ppg_green",
+        "proximal_ppg_red",
+        "proximal_ppg_ir",
+        "proximal_ppg_green",
+        "acc_x",
+        "acc_y",
+        "acc_z"
+      ],
+      "splits": {
+        "train": [
+          "S3",
+          "S6",
+          "S7",
+          "S10",
+          "S11",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S17",
+          "S19",
+          "S20",
+          "S22"
+        ],
+        "val": [
+          "S2",
+          "S5",
+          "S12"
+        ],
+        "test": [
+          "S1",
+          "S4",
+          "S8",
+          "S9",
+          "S18",
+          "S21"
+        ]
+      },
+      "split_counts": {
+        "train": 3314,
+        "val": 777,
+        "test": 1529
+      },
+      "valid_hr_counts": {
+        "train": 3314,
+        "val": 777,
+        "test": 1529
+      },
+      "valid_pat_counts": {
+        "train": 3314,
+        "val": 777,
+        "test": 1529
+      },
+      "activity_pure_counts": {
+        "train": 3314,
+        "val": 777,
+        "test": 1529
+      },
+      "targets": [
+        "hr",
+        "pat"
+      ],
+      "target_definition": {
+        "hr": "60 divided by the mean of valid complete ECG RR intervals wholly contained in the future horizon",
+        "pat": "median future ECG R-peak to infrared PPG maximum-upstroke delay; zero-phase filtering is isolated within the future interval and R peaks require complete 80-450 ms search support"
+      },
+      "preprocessing": {
+        "filtering": "causal fourth-order Butterworth SOS with steady-state initialization",
+        "resampling": "causal anti-alias low-pass followed by previous-sample alignment",
+        "normalization": "per-node z-score using the current input window only",
+        "future_information_in_input": false,
+        "bp_endpoint_interpolation": false
+      },
+      "record_identifiers_saved": true,
+      "input_only_baseline_metadata": [
+        "current_hr",
+        "baseline_current_pat (external only; not model-visible)"
+      ],
+      "source_sha256": "37a0c3f3f29ff335dc5345e532af7d6eef405308a0bb490114a0f4d1640ba0ba",
+      "target_summary": {
+        "hr_train_mean": 83.23868560791016,
+        "hr_train_std": 12.097539901733398
+      },
+      "hr_prediction_mode": "residual_to_input_period_hr",
+      "pat_protocol": {
+        "manifest": "results_v3/isolated_pat_protocol.json",
+        "model_visible_current_pat": false,
+        "future_information_in_input": false
+      }
+    },
+    "splits": {
+      "train": {
+        "windows": 3314,
+        "subjects": [
+          "S10",
+          "S11",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S17",
+          "S19",
+          "S20",
+          "S22",
+          "S3",
+          "S6",
+          "S7"
+        ],
+        "records": 39,
+        "hr_bpm_quantiles": [
+          48.09233856201172,
+          52.61151412963867,
+          83.35649108886719,
+          106.57893249511719,
+          117.09601593017578
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 3314,
+        "sample_max_abs_channel_mean": 0.00010078350896947086,
+        "sample_max_abs_channel_std_error": 1.1920928955078125e-07,
+        "pat_ms_quantiles": [
+          79.99999821186066,
+          92.00000017881393,
+          159.9999964237213,
+          297.8700056672095,
+          385.99997758865356
+        ],
+        "external_current_pat_ms_quantiles": [
+          96.00000083446503,
+          100.00000149011612,
+          153.99999916553497,
+          266.00000262260437,
+          286.00001335144043
+        ]
+      },
+      "val": {
+        "windows": 777,
+        "subjects": [
+          "S12",
+          "S2",
+          "S5"
+        ],
+        "records": 9,
+        "hr_bpm_quantiles": [
+          68.59102630615234,
+          69.17228729248046,
+          92.15303039550781,
+          144.60154174804688,
+          146.1163787841797
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 777,
+        "sample_max_abs_channel_mean": 7.736682891845703e-05,
+        "sample_max_abs_channel_std_error": 1.1920928955078125e-07,
+        "pat_ms_quantiles": [
+          79.99999821186066,
+          94.7599983215332,
+          202.00000703334808,
+          259.99999046325684,
+          319.0000057220459
+        ],
+        "external_current_pat_ms_quantiles": [
+          97.99999743700027,
+          100.00000149011612,
+          186.0000044107437,
+          233.99999737739563,
+          241.99999868869781
+        ]
+      },
+      "test": {
+        "windows": 1529,
+        "subjects": [
+          "S1",
+          "S18",
+          "S21",
+          "S4",
+          "S8",
+          "S9"
+        ],
+        "records": 18,
+        "hr_bpm_quantiles": [
+          55.776893615722656,
+          63.341251373291016,
+          85.61643981933594,
+          100.99880584716797,
+          105.20636749267578
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 1529,
+        "sample_max_abs_channel_mean": 9.351770131615922e-05,
+        "sample_max_abs_channel_std_error": 1.1920928955078125e-07,
+        "pat_ms_quantiles": [
+          79.99999821186066,
+          96.00000083446503,
+          136.00000739097595,
+          261.9999945163727,
+          317.9999887943268
+        ],
+        "external_current_pat_ms_quantiles": [
+          97.99999743700027,
+          104.00000214576721,
+          133.00000131130219,
+          246.0000067949295,
+          254.99999523162842
+        ]
+      }
+    }
+  },
+  "wesad_h30": {
+    "metadata": {
+      "dataset": "wesad",
+      "protocol_version": "v3.0",
+      "target_fs": 64.0,
+      "input_steps": 3840,
+      "horizon_steps": 1920,
+      "short_steps": 1,
+      "stride_steps": 320,
+      "node_names": [
+        "ecg",
+        "resp",
+        "wrist_bvp",
+        "wrist_eda",
+        "wrist_temp",
+        "wrist_acc_x",
+        "wrist_acc_y",
+        "wrist_acc_z"
+      ],
+      "splits": {
+        "train": [
+          "S4",
+          "S7",
+          "S8",
+          "S9",
+          "S10",
+          "S11",
+          "S15",
+          "S16",
+          "S17"
+        ],
+        "val": [
+          "S5",
+          "S6"
+        ],
+        "test": [
+          "S2",
+          "S3",
+          "S13",
+          "S14"
+        ]
+      },
+      "split_counts": {
+        "train": 9820,
+        "val": 2631,
+        "test": 4661
+      },
+      "valid_hr_counts": {
+        "train": 9820,
+        "val": 2631,
+        "test": 4661
+      },
+      "valid_pat_counts": null,
+      "activity_pure_counts": {
+        "train": 9820,
+        "val": 2631,
+        "test": 4661
+      },
+      "targets": [
+        "hr"
+      ],
+      "target_summary": {
+        "hr_train_mean": 79.18303680419922,
+        "hr_train_std": 16.241701126098633
+      },
+      "target_definition": {
+        "hr": "60 divided by the mean of valid complete ECG RR intervals wholly contained in the future horizon",
+        "pat": null
+      },
+      "preprocessing": {
+        "filtering": "causal fourth-order Butterworth SOS with steady-state initialization",
+        "resampling": "causal anti-alias low-pass followed by previous-sample alignment",
+        "normalization": "per-node z-score using the current input window only",
+        "future_information_in_input": false,
+        "bp_endpoint_interpolation": false
+      },
+      "record_identifiers_saved": true,
+      "input_only_baseline_metadata": [
+        "current_hr"
+      ],
+      "hr_prediction_mode": "residual_to_input_period_hr",
+      "source_sha256": "37a0c3f3f29ff335dc5345e532af7d6eef405308a0bb490114a0f4d1640ba0ba"
+    },
+    "splits": {
+      "train": {
+        "windows": 9820,
+        "subjects": [
+          "S10",
+          "S11",
+          "S15",
+          "S16",
+          "S17",
+          "S4",
+          "S7",
+          "S8",
+          "S9"
+        ],
+        "records": 9,
+        "hr_bpm_quantiles": [
+          52.936729431152344,
+          55.95631240844727,
+          76.06461334228516,
+          131.00242446899412,
+          152.59410095214844
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 9820,
+        "sample_max_abs_channel_mean": 0.0004456202150322497,
+        "sample_max_abs_channel_std_error": 2.980232238769531e-07
+      },
+      "val": {
+        "windows": 2631,
+        "subjects": [
+          "S5",
+          "S6"
+        ],
+        "records": 2,
+        "hr_bpm_quantiles": [
+          58.373870849609375,
+          59.796749114990234,
+          68.45458221435547,
+          94.80414123535155,
+          100.61602020263672
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 2631,
+        "sample_max_abs_channel_mean": 0.00030316709307953715,
+        "sample_max_abs_channel_std_error": 2.980232238769531e-07
+      },
+      "test": {
+        "windows": 4661,
+        "subjects": [
+          "S13",
+          "S14",
+          "S2",
+          "S3"
+        ],
+        "records": 4,
+        "hr_bpm_quantiles": [
+          44.96788024902344,
+          49.56078567504883,
+          74.95297241210938,
+          133.04500427246083,
+          147.2551727294922
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 4661,
+        "sample_max_abs_channel_mean": 0.0005143284797668457,
+        "sample_max_abs_channel_std_error": 1.7881393432617188e-07
+      }
+    }
+  },
+  "ppg_dalia_h30": {
+    "metadata": {
+      "dataset": "ppg_dalia",
+      "protocol_version": "v3.0",
+      "target_fs": 64.0,
+      "input_steps": 3840,
+      "horizon_steps": 1920,
+      "short_steps": 1,
+      "stride_steps": 320,
+      "node_names": [
+        "ecg",
+        "resp",
+        "wrist_bvp",
+        "wrist_eda",
+        "wrist_temp",
+        "wrist_acc_x",
+        "wrist_acc_y",
+        "wrist_acc_z"
+      ],
+      "splits": {
+        "train": [
+          "S3",
+          "S6",
+          "S7",
+          "S8",
+          "S9",
+          "S10",
+          "S13",
+          "S14",
+          "S15"
+        ],
+        "val": [
+          "S4",
+          "S5"
+        ],
+        "test": [
+          "S1",
+          "S2",
+          "S11",
+          "S12"
+        ]
+      },
+      "split_counts": {
+        "train": 15175,
+        "val": 3657,
+        "test": 6806
+      },
+      "valid_hr_counts": {
+        "train": 15175,
+        "val": 3657,
+        "test": 6806
+      },
+      "valid_pat_counts": null,
+      "activity_pure_counts": {
+        "train": 12915,
+        "val": 3128,
+        "test": 5760
+      },
+      "targets": [
+        "hr"
+      ],
+      "target_summary": {
+        "hr_train_mean": 87.66968536376953,
+        "hr_train_std": 20.40938377380371
+      },
+      "target_definition": {
+        "hr": "60 divided by the mean of valid complete ECG RR intervals wholly contained in the future horizon",
+        "pat": null
+      },
+      "preprocessing": {
+        "filtering": "causal fourth-order Butterworth SOS with steady-state initialization",
+        "resampling": "causal anti-alias low-pass followed by previous-sample alignment",
+        "normalization": "per-node z-score using the current input window only",
+        "future_information_in_input": false,
+        "bp_endpoint_interpolation": false
+      },
+      "record_identifiers_saved": true,
+      "input_only_baseline_metadata": [
+        "current_hr"
+      ],
+      "hr_prediction_mode": "residual_to_input_period_hr",
+      "source_sha256": "37a0c3f3f29ff335dc5345e532af7d6eef405308a0bb490114a0f4d1640ba0ba"
+    },
+    "splits": {
+      "train": {
+        "windows": 15175,
+        "subjects": [
+          "S10",
+          "S13",
+          "S14",
+          "S15",
+          "S3",
+          "S6",
+          "S7",
+          "S8",
+          "S9"
+        ],
+        "records": 9,
+        "hr_bpm_quantiles": [
+          44.0295524597168,
+          51.821144104003906,
+          84.29606628417969,
+          152.43872680664063,
+          173.65383911132812
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 12915,
+        "sample_max_abs_channel_mean": 0.0004544854164123535,
+        "sample_max_abs_channel_std_error": 2.384185791015625e-07
+      },
+      "val": {
+        "windows": 3657,
+        "subjects": [
+          "S4",
+          "S5"
+        ],
+        "records": 2,
+        "hr_bpm_quantiles": [
+          58.094154357910156,
+          59.467090454101566,
+          104.40768432617188,
+          173.01346618652343,
+          185.86752319335938
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 3128,
+        "sample_max_abs_channel_mean": 0.0005393504980020225,
+        "sample_max_abs_channel_std_error": 2.980232238769531e-07
+      },
+      "test": {
+        "windows": 6806,
+        "subjects": [
+          "S1",
+          "S11",
+          "S12",
+          "S2"
+        ],
+        "records": 4,
+        "hr_bpm_quantiles": [
+          42.27265930175781,
+          44.3621789932251,
+          77.44123458862305,
+          145.7509040832519,
+          170.5089111328125
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 5760,
+        "sample_max_abs_channel_mean": 0.0004995981580577791,
+        "sample_max_abs_channel_std_error": 1.7881393432617188e-07
+      }
+    }
+  },
+  "ptt_ppg_h30": {
+    "metadata": {
+      "dataset": "ptt_ppg",
+      "protocol_version": "v3.0",
+      "target_fs": 64.0,
+      "input_steps": 3840,
+      "horizon_steps": 1920,
+      "short_steps": 1,
+      "stride_steps": 320,
+      "node_names": [
+        "ecg",
+        "finger_ppg_red",
+        "finger_ppg_ir",
+        "finger_ppg_green",
+        "proximal_ppg_red",
+        "proximal_ppg_ir",
+        "proximal_ppg_green",
+        "acc_x",
+        "acc_y",
+        "acc_z"
+      ],
+      "splits": {
+        "train": [
+          "S3",
+          "S6",
+          "S7",
+          "S10",
+          "S11",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S17",
+          "S19",
+          "S20",
+          "S22"
+        ],
+        "val": [
+          "S2",
+          "S5",
+          "S12"
+        ],
+        "test": [
+          "S1",
+          "S4",
+          "S8",
+          "S9",
+          "S18",
+          "S21"
+        ]
+      },
+      "split_counts": {
+        "train": 3146,
+        "val": 737,
+        "test": 1450
+      },
+      "valid_hr_counts": {
+        "train": 3146,
+        "val": 737,
+        "test": 1450
+      },
+      "valid_pat_counts": null,
+      "activity_pure_counts": {
+        "train": 3146,
+        "val": 737,
+        "test": 1450
+      },
+      "targets": [
+        "hr"
+      ],
+      "target_summary": {
+        "hr_train_mean": 83.18803405761719,
+        "hr_train_std": 11.723831176757812
+      },
+      "target_definition": {
+        "hr": "60 divided by the mean of valid complete ECG RR intervals wholly contained in the future horizon",
+        "pat": null
+      },
+      "preprocessing": {
+        "filtering": "causal fourth-order Butterworth SOS with steady-state initialization",
+        "resampling": "causal anti-alias low-pass followed by previous-sample alignment",
+        "normalization": "per-node z-score using the current input window only",
+        "future_information_in_input": false,
+        "bp_endpoint_interpolation": false
+      },
+      "record_identifiers_saved": true,
+      "input_only_baseline_metadata": [
+        "current_hr"
+      ],
+      "hr_prediction_mode": "residual_to_input_period_hr",
+      "source_sha256": "37a0c3f3f29ff335dc5345e532af7d6eef405308a0bb490114a0f4d1640ba0ba",
+      "horizon_analysis": {
+        "task": "hr_only",
+        "model": "PatchTST",
+        "pat_optimized": false,
+        "pat_evaluated": false,
+        "legacy_pat_arrays": "Retained under legacy_*_unused.npy names that PhysioWindowDataset does not discover"
+      }
+    },
+    "splits": {
+      "train": {
+        "windows": 3146,
+        "subjects": [
+          "S10",
+          "S11",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S17",
+          "S19",
+          "S20",
+          "S22",
+          "S3",
+          "S6",
+          "S7"
+        ],
+        "records": 39,
+        "hr_bpm_quantiles": [
+          50.083473205566406,
+          52.561845016479495,
+          83.61090087890625,
+          104.86196632385254,
+          106.58650207519531
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 3146,
+        "sample_max_abs_channel_mean": 0.00010078350896947086,
+        "sample_max_abs_channel_std_error": 1.1920928955078125e-07
+      },
+      "val": {
+        "windows": 737,
+        "subjects": [
+          "S12",
+          "S2",
+          "S5"
+        ],
+        "records": 9,
+        "hr_bpm_quantiles": [
+          69.78653717041016,
+          70.15304473876954,
+          91.76182556152344,
+          144.54868408203126,
+          145.2198486328125
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 737,
+        "sample_max_abs_channel_mean": 7.736682891845703e-05,
+        "sample_max_abs_channel_std_error": 1.1920928955078125e-07
+      },
+      "test": {
+        "windows": 1450,
+        "subjects": [
+          "S1",
+          "S18",
+          "S21",
+          "S4",
+          "S8",
+          "S9"
+        ],
+        "records": 18,
+        "hr_bpm_quantiles": [
+          59.232025146484375,
+          66.25706871032715,
+          85.6560173034668,
+          99.11587684631347,
+          102.87360382080078
+        ],
+        "duplicate_record_start_keys": 0,
+        "activity_pure_windows": 1450,
+        "sample_max_abs_channel_mean": 0.00010548035061219707,
+        "sample_max_abs_channel_std_error": 1.1920928955078125e-07
+      }
+    }
+  },
+  "ppg_dalia_official_label_validation": {
+    "overall_mae_bpm": 0.32420890698910176,
+    "n": 64697,
+    "per_subject": {
+      "S1": {
+        "n": 4603,
+        "mae_bpm": 0.33117677007987834,
+        "bias_bpm": -0.33075978904805003,
+        "pearson_r": 0.999468029532324
+      },
+      "S2": {
+        "n": 4099,
+        "mae_bpm": 0.21019145040476409,
+        "bias_bpm": -0.20981602771238225,
+        "pearson_r": 0.9997734941537256
+      },
+      "S3": {
+        "n": 4367,
+        "mae_bpm": 0.21967099937373152,
+        "bias_bpm": -0.2193256219559924,
+        "pearson_r": 0.9997533297259235
+      },
+      "S4": {
+        "n": 4572,
+        "mae_bpm": 0.2305403297151721,
+        "bias_bpm": -0.2299864048912149,
+        "pearson_r": 0.9997778631100889
+      },
+      "S5": {
+        "n": 4649,
+        "mae_bpm": 0.05362427360848862,
+        "bias_bpm": -0.05352405385506455,
+        "pearson_r": 0.9999911964186047
+      },
+      "S6": {
+        "n": 2622,
+        "mae_bpm": 0.20781769894993235,
+        "bias_bpm": -0.20740532774133194,
+        "pearson_r": 0.9997284127013898
+      },
+      "S7": {
+        "n": 4668,
+        "mae_bpm": 0.4641688907269133,
+        "bias_bpm": -0.46406183362933767,
+        "pearson_r": 0.9996795081269761
+      },
+      "S8": {
+        "n": 4037,
+        "mae_bpm": 1.3239938013593127,
+        "bias_bpm": -1.3224540424695403,
+        "pearson_r": 0.9888098077824741
+      },
+      "S9": {
+        "n": 4277,
+        "mae_bpm": 0.10087269088479774,
+        "bias_bpm": -0.10030563173863553,
+        "pearson_r": 0.9999777843296499
+      },
+      "S10": {
+        "n": 5321,
+        "mae_bpm": 0.28136323565904964,
+        "bias_bpm": -0.28120745444350254,
+        "pearson_r": 0.9975682719652044
+      },
+      "S11": {
+        "n": 4521,
+        "mae_bpm": 0.20162319070494883,
+        "bias_bpm": -0.20136665249963065,
+        "pearson_r": 0.999914365645688
+      },
+      "S12": {
+        "n": 3954,
+        "mae_bpm": 0.10148620047998054,
+        "bias_bpm": -0.10137548871157048,
+        "pearson_r": 0.9998203838262029
+      },
+      "S13": {
+        "n": 4565,
+        "mae_bpm": 0.2629378778324769,
+        "bias_bpm": -0.2621800786650962,
+        "pearson_r": 0.999911892425393
+      },
+      "S14": {
+        "n": 4476,
+        "mae_bpm": 0.70406143006642,
+        "bias_bpm": -0.7033746846390511,
+        "pearson_r": 0.9947913534763677
+      },
+      "S15": {
+        "n": 3966,
+        "mae_bpm": 0.1707151896614575,
+        "bias_bpm": -0.1704956053299074,
+        "pearson_r": 0.99987917620246
+      }
+    }
+  }
+}

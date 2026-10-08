@@ -1,0 +1,30 @@
+# @package _global_
+defaults:
+  - /data: wesad
+  - /model: picdgn
+  - _self_
+
+seed: 42
+epochs: 200
+batch_size: 32
+num_workers: 0
+learning_rate: 0.0003
+weight_decay: 0.01
+warmup_epochs: 10
+patience: 20
+grad_clip_norm: 1.0
+amp: true
+deterministic: true
+residual_hr: true
+log_every_steps: 50
+graph_viz_every_epochs: 10
+output_dir: results/${data.name}/${model.name}
+wandb:
+  enabled: false
+  project: picdgn
+tensorboard:
+  enabled: true
+
+hydra:
+  job:
+    chdir: false

@@ -1,0 +1,19 @@
+name: cross
+train_datasets:
+  - wesad
+  - ppg_dalia
+test_dataset: ptt_ppg
+processed_roots:
+  wesad: data/processed/wesad
+  ppg_dalia: data/processed/ppg_dalia
+  ptt_ppg: data/processed/ptt_ppg
+
+common_nodes:
+  - ecg
+  - ppg
+  - acc_x
+  - acc_y
+  - acc_z
+target_names:
+  - wave
+  - hr

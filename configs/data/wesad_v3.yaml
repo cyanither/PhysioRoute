@@ -1,0 +1,20 @@
+name: wesad
+raw_dir: data/raw/wesad
+processed_dir: data/processed_v3/wesad_h8
+target_fs: 64
+input_sec: 60
+horizon_sec: 8
+stride_sec: 5
+label_fs: 700
+rpeak_cache_dir: data/cache_v3/wesad_rpeaks
+output_dtype: float32
+subject_split: {train: 0.60, val: 0.15, test: 0.25, seed: 42}
+nodes:
+  - {name: ecg, source: chest, key: ECG, fs: 700, filter: ecg}
+  - {name: resp, source: chest, key: Resp, fs: 700, filter: resp}
+  - {name: wrist_bvp, source: wrist, key: BVP, fs: 64, filter: ppg}
+  - {name: wrist_eda, source: wrist, key: EDA, fs: 4, filter: none}
+  - {name: wrist_temp, source: wrist, key: TEMP, fs: 4, filter: none}
+  - {name: wrist_acc_x, source: wrist, key: ACC, axis: 0, fs: 32, filter: none}
+  - {name: wrist_acc_y, source: wrist, key: ACC, axis: 1, fs: 32, filter: none}
+  - {name: wrist_acc_z, source: wrist, key: ACC, axis: 2, fs: 32, filter: none}

@@ -1,0 +1,27 @@
+name: picdgn
+d_model: 64
+temporal_downsample: 16
+chunk_sec: 2
+message_passing_steps: 1
+tau_min_ms: 0
+tau_max_ms: 500
+gumbel_temperature_start: 1.0
+gumbel_temperature_end: 0.2
+heads:
+  waveform: false
+  hr: true
+  bp: false
+  stress: false
+loss:
+  lambda_hr: 1.0
+  lambda_pat: 0.01
+  lambda_dir: 0.05
+  lambda_sp: 0.001
+ablations:
+  graph_type: dynamic
+  directed: true
+  delay_mode: learned_pat_prior
+  use_pat_prior: true
+  use_direction_prior: true
+  use_sparsity: true
+  use_edge_uncertainty: false

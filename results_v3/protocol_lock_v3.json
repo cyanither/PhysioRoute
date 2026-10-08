@@ -1,0 +1,20 @@
+{
+  "locked_at_local": "2026-08-12T16:01:42+08:00",
+  "protocol": "v3.0 leakage-safe H=8 canonical experiments",
+  "files": {
+    "src/data/preprocess_v3.py": "37a0c3f3f29ff335dc5345e532af7d6eef405308a0bb490114a0f4d1640ba0ba",
+    "src/data/loaders.py": "875ed29ccbddc179599442abfb44fd082f6ef9bd545a693783c837aed7716860",
+    "src/train.py": "32a876278b1989f0e414603638ee890c69748c9bacd897c62bf9c138baa31717",
+    "src/eval.py": "6dfddf99df36f4cbbc58876034b503b0c3b295961be79b967a58c7d7c78b366d",
+    "src/models/graph_learner.py": "4d9188e48f474d6dfe0ac91d837eaf7c3e06964124e89faf912dfedb09b7012f",
+    "src/models/picdgn.py": "aa8bd422412c63fc07df95e52de501be3bd32bd72781f456cda24197c5631591",
+    "src/models/encoders.py": "50f101acf5fc1c34a21c9ab1519ac982df7caadb2b81977d6df4591e124f184c",
+    "src/models/losses.py": "c03b1a50b128cf16922b9c21cdf16e21bd29e220c131162b51f22d6d6c8f0916",
+    "configs/model/picdgn_v3.yaml": "60b59d94a7e634f2bfafae09c7a05bafbd5b3024892fe83c55364db3c1ecffd3",
+    "configs/train/default.yaml": "5ebb4e902fda253e72b239ac6007a4bffd61f6c5bebe6255289731658a4b5fe9",
+    "configs/data/wesad_v3.yaml": "b6d26c815b7af4ccd9a75fc7107794ad296cb1ac7086577ca2cff2e2890fc851",
+    "configs/data/ppg_dalia_v3.yaml": "63d85cb4e4756875e2a76e8af685347c54de0abf3c0ad9f34031fdbba57bc85f",
+    "configs/data/ptt_ppg_v3.yaml": "0c3cc412fb0cae2fcccc2e3dc37e382e94faefea860b2306d26d6c8f20d63b1f"
+  },
+  "rule": "Canonical and ablation runs after this lock must match these hashes; source/config files are frozen until all runs finish."
+}

@@ -1,0 +1,3 @@
+name: agcrn
+hidden_size: 128
+embed_dim: 32
